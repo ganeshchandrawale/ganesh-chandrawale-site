@@ -9,14 +9,14 @@ import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'Ganesh Chandrawale — Solutions Architect | Digital Transformation | London',
+  title: 'Ganesh Chandrawale — Solutions Architect | Digital Transformation',
   description:
-    'Ganesh Chandrawale is a Solutions Architect with 15+ years experience in AWS, microservices, REST API design and digital transformation. Based in London. Formerly DXC Technology, Cognizant, Network Rail, Telefonica O2.',
+    'Ganesh Chandrawale is a Solutions Architect with 15+ years experience in AWS, microservices, REST API design and digital transformation.',
   alternates: { canonical: '/' },
   openGraph: {
-    title: 'Ganesh Chandrawale — Solutions Architect | Digital Transformation | London',
+    title: 'Ganesh Chandrawale — Solutions Architect | Digital Transformation',
     description:
-      'Solutions Architect with 15+ years experience in AWS, microservices and digital transformation. Based in London, UK.',
+      'Solutions Architect with 15+ years experience in AWS, microservices and digital transformation.',
     url: 'https://www.ganeshchandrawale.io',
   },
 }

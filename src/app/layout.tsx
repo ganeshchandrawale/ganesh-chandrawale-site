@@ -6,11 +6,11 @@ const BASE_URL = 'https://www.ganeshchandrawale.io'
 export const metadata: Metadata = {
   // ── Core ──────────────────────────────────────────────────────────────────
   title: {
-    default: 'Ganesh Chandrawale — Solutions Architect | Digital Transformation | London',
+    default: 'Ganesh Chandrawale — Solutions Architect | Digital Transformation',
     template: '%s | Ganesh Chandrawale',
   },
   description:
-    'Ganesh Chandrawale is a Solutions Architect with 15+ years of experience in digital transformation, AWS cloud architecture, microservices, REST API design and IT strategy. Based in London, UK. Previously at DXC Technology, Cognizant, Network Rail and Telefonica O2.',
+    'Ganesh Chandrawale is a Solutions Architect with 15+ years of experience in digital transformation, AWS cloud architecture, microservices, REST API design and IT strategy.',
 
   // ── Keywords (still worth including for some search engines) ─────────────
   keywords: [
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     locale: 'en_GB',
     url: BASE_URL,
     siteName: 'Ganesh Chandrawale',
-    title: 'Ganesh Chandrawale — Solutions Architect | Digital Transformation | London',
+    title: 'Ganesh Chandrawale — Solutions Architect | Digital Transformation',
     description:
       'Solutions Architect with 15+ years experience in AWS, microservices, API design and digital transformation. Based in London. Writing about technology, leadership and the future of work.',
     images: [
@@ -73,7 +73,7 @@ export const metadata: Metadata = {
   // ── Twitter / X card ─────────────────────────────────────────────────────
   twitter: {
     card: 'summary_large_image',
-    title: 'Ganesh Chandrawale — Solutions Architect | London',
+    title: 'Ganesh Chandrawale — Solutions Architect',
     description:
       'Solutions Architect with 15+ years in digital transformation, AWS and API architecture.',
     images: ['/og-image.png'],
@@ -106,7 +106,7 @@ const personJsonLd = {
   url: BASE_URL,
   jobTitle: 'Solutions Architect',
   description:
-    'Solutions Architect with 15+ years of experience in digital transformation, AWS, microservices and API architecture. Based in London, UK.',
+    'Solutions Architect with 15+ years of experience in digital transformation, AWS, microservices and API architecture.',
   worksFor: {
     '@type': 'Organization',
     name: 'DXC Technology',
