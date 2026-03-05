@@ -1,6 +1,8 @@
 import { getAllBlogPosts, getAllAIInsights } from '@/lib/posts'
 import { MetadataRoute } from 'next'
 
+export const dynamic = 'force-static'
+
 const BASE_URL = 'https://www.ganeshchandrawale.io'
 
 export default function sitemap(): MetadataRoute.Sitemap {
