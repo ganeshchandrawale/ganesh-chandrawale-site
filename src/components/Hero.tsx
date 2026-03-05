@@ -117,7 +117,6 @@ export default function Hero() {
               { num: '15+', label: 'Years in tech' },
               { num: '4', label: 'Industries served' },
               { num: '10+', label: 'Roles & disciplines' },
-              { num: '3', label: 'Countries worked in' },
             ].map((stat) => (
               <div key={stat.label}>
                 <div className="font-display text-3xl font-bold text-[#0F4C5C]">{stat.num}</div>
