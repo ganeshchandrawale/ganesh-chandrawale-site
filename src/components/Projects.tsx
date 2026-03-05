@@ -17,7 +17,7 @@ const projects = [
     company: 'Cognizant · Telefonica O2',
     period: '2018',
     description: 'Three legacy apps needed migrating from Spanish data centres to AWS — with 3 months to go before a DC licence deadline. Discovered they were incompatible with lift-and-shift. Presented an alternative modernisation plan, got it approved, and delivered all three applications with penetration testing complete and 3 days to spare. Solo-architected the full high and low-level design.',
-    outcomes: ['Saved client £1M+ in DC licence costs', 'Delivered 3 months ahead of penalty clause', '100% technology compliance achieved'],
+    outcomes: ['Saved client thousands of pounds in DC licence costs', 'Delivered 3 months ahead of penalty clause', '100% technology compliance achieved'],
     colour: '#D4791A',
   },
   {
