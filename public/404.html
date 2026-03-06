@@ -4,15 +4,21 @@
   <meta charset="utf-8">
   <title>Redirecting...</title>
   <script>
-    // GitHub Pages SPA redirect for Next.js static export
-    var path = window.location.pathname;
-    var search = window.location.search;
-    
-    // Redirect to homepage with path parameter
-    window.location.replace('/?' + 
-      (search ? search.substring(1) + '&' : '') + 
-      'p=' + encodeURIComponent(path)
-    );
+    // Redirect for GitHub Pages SPA
+    (function() {
+      var path = window.location.pathname;
+      
+      // If we're already on the homepage with a redirect param, don't loop
+      if (window.location.search.indexOf('p=') !== -1) {
+        return;
+      }
+      
+      // Redirect to homepage with path as parameter
+      window.location.replace(
+        window.location.origin + '/?p=' + encodeURIComponent(path) + 
+        (window.location.search ? '&' + window.location.search.substring(1) : '')
+      );
+    })();
   </script>
 </head>
 <body>
