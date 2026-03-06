@@ -3,6 +3,7 @@ import Nav from '@/components/Nav'
 import Hero from '@/components/Hero'
 import About from '@/components/About'
 import Journey from '@/components/Journey'
+import Volunteering from '@/components/Volunteering'
 import NotableWork from '@/components/NotableWork'
 import LatestProjects from '@/components/LatestProjects'
 import AIInsightsTeaser from '@/components/AIInsightsTeaser'
@@ -96,6 +97,7 @@ export default function Home() {
         <Hero />
         <About />
         <Journey />
+        <Volunteering />
         <NotableWork />
         <LatestProjects />
         <AIInsightsTeaser />

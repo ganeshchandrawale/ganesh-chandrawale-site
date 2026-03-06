@@ -6,6 +6,7 @@ import { Menu, X } from 'lucide-react'
 const navLinks = [
   { label: 'About', href: '/#about' },
   { label: 'Journey', href: '/#journey' },
+  { label: 'Volunteering', href: '/#volunteering' },
   { label: 'Notable Work', href: '/#notable-work' },
   { label: 'Latest Projects', href: '/#latest-projects' },
   { label: 'AI Insights', href: '/ai-insights' },
