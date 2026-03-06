@@ -4,6 +4,7 @@ import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
 import { ArrowLeft } from 'lucide-react'
+import { parseMarkdown } from '@/lib/markdown'
 
 const BASE_URL = 'https://ganeshchandrawale.info'
 
@@ -237,7 +238,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
               prose-ul:font-body prose-ul:text-ink-700
               prose-li:my-1
               prose-hr:border-ink-200 prose-hr:my-8"
-            dangerouslySetInnerHTML={{ __html: project.content.trim().replace(/\n/g, '<br />').replace(/<br \/><br \/>/g, '</p><p>').replace(/^(.+)$/, '<p>$1</p>').replace(/## (.+)<\/p>/g, '<h2>$1</h2>').replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>').replace(/\*(.+?)\*/g, '<em>$1</em>').replace(/^- (.+)$/gm, '<li>$1</li>').replace(/(<li>.*<\/li>)/s, '<ul>$1</ul>').replace(/---<\/p>/g, '<hr />') }}
+            dangerouslySetInnerHTML={{ __html: parseMarkdown(project.content) }}
           />
         </article>
       </main>
