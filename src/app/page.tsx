@@ -8,6 +8,7 @@ import LatestProjects from '@/components/LatestProjects'
 import AIInsightsTeaser from '@/components/AIInsightsTeaser'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
+import RedirectHandler from '@/components/RedirectHandler'
 
 export const metadata: Metadata = {
   title: 'Ganesh Chandrawale — Solutions Architect | Digital Transformation',
@@ -81,6 +82,7 @@ const faqJsonLd = {
 export default function Home() {
   return (
     <>
+      <RedirectHandler />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageJsonLd) }}
