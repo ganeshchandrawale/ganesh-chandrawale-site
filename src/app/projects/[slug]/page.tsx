@@ -211,7 +211,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
             className="inline-flex items-center gap-2 font-sans text-sm text-[#D4791A] hover:text-[#0F4C5C] transition-colors mb-8"
           >
             <ArrowLeft size={14} />
-            Back to Projects
+            Back to Notable Work
           </Link>
 
           <div className="mb-8">

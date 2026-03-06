@@ -7,11 +7,11 @@ import { ArrowRight } from 'lucide-react'
 const BASE_URL = 'https://ganeshchandrawale.info'
 
 export const metadata: Metadata = {
-  title: 'Projects — Real Work, Real Outcomes',
+  title: 'Notable Work — Real Work, Real Outcomes',
   description: 'Notable projects by Ganesh Chandrawale — from billing transformation to legacy migration, process automation to hiring reform.',
   alternates: { canonical: '/projects' },
   openGraph: {
-    title: 'Projects | Ganesh Chandrawale — Solutions Architect',
+    title: 'Notable Work | Ganesh Chandrawale — Solutions Architect',
     description: 'Real work, real outcomes. Notable projects from 15+ years in enterprise technology.',
     url: `${BASE_URL}/projects`,
     type: 'website',
@@ -51,7 +51,7 @@ export default function ProjectsPage() {
               <span className="font-sans text-xs tracking-[0.2em] uppercase text-[#D4791A] font-medium">Notable work</span>
             </div>
             <h1 className="font-display text-5xl font-bold text-[#0F4C5C] leading-tight mb-4">
-              Projects
+              Notable Work
             </h1>
             <p className="font-body text-base text-ink-500 max-w-xl leading-relaxed">
               Not just project names — the context, the challenge, and what actually happened.
