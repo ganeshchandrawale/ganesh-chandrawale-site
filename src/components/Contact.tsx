@@ -1,6 +1,6 @@
 'use client'
 import { useEffect, useRef } from 'react'
-import { Linkedin, Github, Mail } from 'lucide-react'
+import { Mail, Linkedin, Github } from 'lucide-react'
 
 export default function Contact() {
   const sectionRef = useRef<HTMLElement>(null)
@@ -11,7 +11,7 @@ export default function Contact() {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.querySelectorAll('.reveal').forEach((el, i) => {
-              setTimeout(() => el.classList.add('visible'), i * 120)
+              setTimeout(() => el.classList.add('visible'), i * 100)
             })
           }
         })
@@ -23,60 +23,50 @@ export default function Contact() {
   }, [])
 
   return (
-    <section id="contact" ref={sectionRef} className="py-24 md:py-32 bg-[#FAF7F2]">
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="max-w-2xl mx-auto text-center">
-          <div className="reveal flex items-center justify-center gap-3 mb-4">
-            <div className="h-px w-8 bg-[#D4791A]" />
-            <span className="font-sans text-xs tracking-[0.2em] uppercase text-[#D4791A] font-medium">
-              Get in touch
-            </span>
-            <div className="h-px w-8 bg-[#D4791A]" />
-          </div>
+    <section id="contact" ref={sectionRef} className="py-24 md:py-32 bg-[#0F4C5C]">
+      <div className="max-w-4xl mx-auto px-6 text-center">
+        <div className="reveal flex items-center justify-center gap-3 mb-4">
+          <div className="h-px w-8 bg-amber-300" />
+          <span className="font-sans text-xs tracking-[0.2em] uppercase text-amber-300 font-medium">
+            Get in touch
+          </span>
+          <div className="h-px w-8 bg-amber-300" />
+        </div>
 
-          <h2 className="reveal font-display text-4xl md:text-5xl font-bold text-[#0F4C5C] leading-tight mb-4">
-            Let's have a<br />
-            <em className="font-normal text-ink-700">real conversation.</em>
-          </h2>
+        <h2 className="reveal font-display text-4xl md:text-5xl font-bold text-white leading-tight mb-6">
+          Let's talk.
+        </h2>
 
-          <p className="reveal font-body text-base text-ink-500 leading-relaxed mb-10">
-            Whether you want to talk architecture, AI strategy, career journeys, or just swap
-            notes on what's working and what isn't in enterprise tech — I'm always up for it.
-          </p>
+        <p className="reveal font-body text-base text-white/70 max-w-xl mx-auto mb-10 leading-relaxed">
+          Whether it's architecture, transformation, hiring, or just a conversation about where technology is heading — I'm always up for a chat.
+        </p>
 
-          {/* Contact links */}
-          <div className="reveal flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
-            <a
-              href="mailto:gchandrawale@gmail.com"
-              className="inline-flex items-center gap-3 bg-[#0F4C5C] text-white font-sans font-medium text-sm px-6 py-3 rounded-sm hover:bg-[#1B7A8A] transition-colors w-full sm:w-auto justify-center"
-            >
-              <Mail size={15} />
-              gchandrawale@gmail.com
-            </a>
-          </div>
-
-          {/* Social links */}
-          <div className="reveal flex items-center justify-center gap-6">
-            <a
-              href="https://www.linkedin.com/in/ganesh-chandrawale-7b734433/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group flex items-center gap-2 font-sans text-sm text-ink-600 hover:text-[#D4791A] transition-colors"
-            >
-              <Linkedin size={16} className="group-hover:scale-110 transition-transform" />
-              LinkedIn
-            </a>
-            <div className="w-px h-4 bg-ink-200" />
-            <a
-              href="https://github.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group flex items-center gap-2 font-sans text-sm text-ink-600 hover:text-[#D4791A] transition-colors"
-            >
-              <Github size={16} className="group-hover:scale-110 transition-transform" />
-              GitHub
-            </a>
-          </div>
+        <div className="reveal flex flex-wrap items-center justify-center gap-4 mb-8">
+          <a
+            href="mailto:ganesh.chandrawale@gmail.com"
+            className="inline-flex items-center gap-2 bg-white text-[#0F4C5C] font-sans font-medium text-sm px-6 py-3 rounded-sm hover:bg-amber-100 transition-colors"
+          >
+            <Mail size={16} />
+            Email me
+          </a>
+          <a
+            href="https://www.linkedin.com/in/ganesh-chandrawale-7b734433/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 border border-white/30 text-white font-sans font-medium text-sm px-6 py-3 rounded-sm hover:bg-white/10 transition-colors"
+          >
+            <Linkedin size={16} />
+            LinkedIn
+          </a>
+          <a
+            href="https://github.com/ganeshchandrawale"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 border border-white/30 text-white font-sans font-medium text-sm px-6 py-3 rounded-sm hover:bg-white/10 transition-colors"
+          >
+            <Github size={16} />
+            GitHub
+          </a>
         </div>
       </div>
     </section>
