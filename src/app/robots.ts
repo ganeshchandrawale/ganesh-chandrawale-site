@@ -10,7 +10,7 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
       },
     ],
-    sitemap: 'https://www.ganeshchandrawale.io/sitemap.xml',
-    host: 'https://www.ganeshchandrawale.io',
+    sitemap: 'https://ganeshchandrawale.info/sitemap.xml',
+    host: 'https://ganeshchandrawale.info',
   }
 }

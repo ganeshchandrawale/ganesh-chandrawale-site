@@ -3,7 +3,7 @@ import { MetadataRoute } from 'next'
 
 export const dynamic = 'force-static'
 
-const BASE_URL = 'https://www.ganeshchandrawale.io'
+const BASE_URL = 'https://ganeshchandrawale.info'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const blogPosts = getAllBlogPosts()
@@ -27,6 +27,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.9,
+    },
+    {
+      url: `${BASE_URL}/projects`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: `${BASE_URL}/projects/billing-transformation`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
     },
   ]
 

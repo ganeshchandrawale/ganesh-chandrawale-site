@@ -17,11 +17,11 @@ export const metadata: Metadata = {
     title: 'Ganesh Chandrawale — Solutions Architect | Digital Transformation',
     description:
       'Solutions Architect with 15+ years experience in AWS, microservices and digital transformation.',
-    url: 'https://www.ganeshchandrawale.io',
+    url: 'https://ganeshchandrawale.info',
   },
 }
 
-const BASE_URL = 'https://www.ganeshchandrawale.io'
+const BASE_URL = 'https://ganeshchandrawale.info'
 
 // WebPage schema
 const webPageJsonLd = {

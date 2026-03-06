@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import '../styles/globals.css'
 
-const BASE_URL = 'https://www.ganeshchandrawale.io'
+const BASE_URL = 'https://ganeshchandrawale.info'
 
 export const metadata: Metadata = {
   // ── Core ──────────────────────────────────────────────────────────────────

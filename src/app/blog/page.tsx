@@ -5,7 +5,7 @@ import Footer from '@/components/Footer'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 
-const BASE_URL = 'https://www.ganeshchandrawale.io'
+const BASE_URL = 'https://ganeshchandrawale.info'
 
 export const metadata: Metadata = {
   title: 'Blog — Architecture, Leadership & Technology',

@@ -60,7 +60,7 @@ export default async function Image() {
           ))}
           {/* URL */}
           <div style={{ marginLeft: 'auto', display: 'flex', alignItems: 'flex-end' }}>
-            <span style={{ fontFamily: 'sans-serif', fontSize: '14px', color: '#a3a3a3' }}>ganeshchandrawale.io</span>
+            <span style={{ fontFamily: 'sans-serif', fontSize: '14px', color: '#a3a3a3' }}>ganeshchandrawale.info</span>
           </div>
         </div>
 

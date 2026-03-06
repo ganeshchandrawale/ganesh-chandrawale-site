@@ -8,7 +8,7 @@ import remarkHtml from 'remark-html'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 
-const BASE_URL = 'https://www.ganeshchandrawale.io'
+const BASE_URL = 'https://ganeshchandrawale.info'
 
 export async function generateStaticParams() {
   const posts = getAllBlogPosts()
