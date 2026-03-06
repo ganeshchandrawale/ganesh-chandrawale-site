@@ -94,7 +94,6 @@ export default function About() {
                   {[
                     { role: 'Solutions Architect', place: 'DXC Technology / Velonetic, London' },
                     { role: 'Building an AI Agent', place: 'DXC Innovation Challenge' },
-                    { role: 'System Architecture Guild Master', place: 'London Market Transformation' },
                   ].map((item) => (
                     <div key={item.role}>
                       <div className="font-sans text-sm font-medium text-white">{item.role}</div>
@@ -112,9 +111,15 @@ export default function About() {
                 </div>
                 <div className="flex flex-wrap gap-2">
                   {[
-                    'AWS', 'Microservices', 'REST API Design', 'Event-Driven Architecture',
-                    'Digital Transformation', 'IT Strategy', 'Requirements Management',
-                    'Process Automation', 'DevOps', 'API Governance', 'SwaggerHub',
+                    'Insurance Domain Architecture',
+                    'London Market Insurance',
+                    'Insurance Settlements',
+                    'Insurance Billing',
+                    'Sanctions Enablement',
+                    'Architecture Governance',
+                    'Regulatory & Financial Controls',
+                    'Stakeholder Management',
+                    'Solution Architecture',
                   ].map((skill) => (
                     <span
                       key={skill}
