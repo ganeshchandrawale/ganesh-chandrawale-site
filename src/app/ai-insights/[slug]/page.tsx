@@ -93,29 +93,29 @@ export default async function AIInsightPost({ params }: { params: { slug: string
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <Nav />
-      <main className="min-h-screen bg-[#0F4C5C] pt-28 pb-24">
+      <main className="min-h-screen bg-[#FAF7F2] pt-28 pb-24">
         <div className="max-w-2xl mx-auto px-6">
 
           {/* Breadcrumb */}
           <nav aria-label="Breadcrumb" className="mb-8">
-            <ol className="flex items-center gap-2 font-sans text-xs text-white/40">
-              <li><Link href="/" className="hover:text-amber-300 transition-colors">Home</Link></li>
+            <ol className="flex items-center gap-2 font-sans text-xs text-ink-400">
+              <li><Link href="/" className="hover:text-[#D4791A] transition-colors">Home</Link></li>
               <li aria-hidden="true">/</li>
-              <li><Link href="/ai-insights" className="hover:text-amber-300 transition-colors">AI Insights</Link></li>
+              <li><Link href="/ai-insights" className="hover:text-[#D4791A] transition-colors">AI Insights</Link></li>
               <li aria-hidden="true">/</li>
-              <li className="text-white/60 truncate max-w-[220px]">{post.title}</li>
+              <li className="text-ink-500 truncate max-w-[220px]">{post.title}</li>
             </ol>
           </nav>
 
           {/* Meta row */}
           <div className="flex items-center gap-4 mb-4 flex-wrap">
-            <time dateTime={post.date} className="font-mono text-xs text-amber-300">{post.date}</time>
-            <span className="text-white/20" aria-hidden="true">·</span>
-            <span className="font-sans text-xs text-white/40">{post.readTime}</span>
+            <time dateTime={post.date} className="font-mono text-xs text-[#D4791A]">{post.date}</time>
+            <span className="text-ink-200" aria-hidden="true">·</span>
+            <span className="font-sans text-xs text-ink-400">{post.readTime}</span>
             {post.linkedinPost && (
               <>
-                <span className="text-white/20" aria-hidden="true">·</span>
-                <span className="font-sans text-xs text-white/40 flex items-center gap-1">
+                <span className="text-ink-200" aria-hidden="true">·</span>
+                <span className="font-sans text-xs text-ink-400 flex items-center gap-1">
                   <Linkedin size={11} aria-hidden="true" /> Also on LinkedIn
                 </span>
               </>
@@ -123,39 +123,50 @@ export default async function AIInsightPost({ params }: { params: { slug: string
           </div>
 
           {/* H1 */}
-          <h1 className="font-display text-4xl md:text-5xl font-bold text-white leading-tight mb-4">
+          <h1 className="font-display text-4xl md:text-5xl font-bold text-[#0F4C5C] leading-tight mb-4">
             {post.title}
           </h1>
 
           {/* Byline */}
-          <p className="font-sans text-sm text-white/50 mb-8">
-            By <span className="font-medium text-white/80">Ganesh Chandrawale</span>
+          <p className="font-sans text-sm text-ink-500 mb-8">
+            By <span className="font-medium text-ink-700">Ganesh Chandrawale</span>
             {' '}— Solutions Architect, London
           </p>
 
           <div className="flex items-center gap-4 mb-10" aria-hidden="true">
-            <div className="h-px flex-1 bg-white/10" />
-            <div className="w-2 h-2 rounded-full bg-amber-400" />
-            <div className="h-px flex-1 bg-white/10" />
+            <div className="h-px flex-1 bg-ink-200" />
+            <div className="w-2 h-2 rounded-full bg-[#D4791A]" />
+            <div className="h-px flex-1 bg-ink-200" />
           </div>
 
           {/* Article body */}
           <article
-            className="prose-warm"
-            style={{ color: 'rgba(255,255,255,0.82)' }}
+            className="prose prose-lg max-w-none
+              prose-headings:font-display prose-headings:text-[#0F4C5C]
+              prose-h2:text-2xl prose-h2:font-bold prose-h2:mt-12 prose-h2:mb-4
+              prose-h3:text-xl prose-h3:font-bold prose-h3:mt-8 prose-h3:mb-3
+              prose-p:font-body prose-p:text-ink-700 prose-p:leading-relaxed
+              prose-strong:text-[#0F4C5C] prose-strong:font-semibold
+              prose-ul:font-body prose-ul:text-ink-700
+              prose-ol:font-body prose-ol:text-ink-700
+              prose-li:my-1
+              prose-a:text-[#D4791A] prose-a:underline hover:prose-a:text-[#0F4C5C]
+              prose-blockquote:border-l-4 prose-blockquote:border-[#D4791A] prose-blockquote:pl-4 prose-blockquote:italic prose-blockquote:text-ink-600
+              prose-code:text-[#0F4C5C] prose-code:bg-amber-50 prose-code:px-1 prose-code:py-0.5 prose-code:rounded
+              prose-hr:border-ink-200 prose-hr:my-8"
             dangerouslySetInnerHTML={{ __html: contentHtml }}
           />
 
           {/* Footer nav */}
-          <div className="mt-16 pt-8 border-t border-white/10 flex items-center justify-between flex-wrap gap-4">
-            <Link href="/ai-insights" className="inline-flex items-center gap-2 font-sans text-sm text-white/50 hover:text-amber-300 transition-colors">
+          <div className="mt-16 pt-8 border-t border-ink-200 flex items-center justify-between flex-wrap gap-4">
+            <Link href="/ai-insights" className="inline-flex items-center gap-2 font-sans text-sm text-ink-500 hover:text-[#D4791A] transition-colors">
               <ArrowLeft size={14} aria-hidden="true" /> All insights
             </Link>
             <a
               href="https://www.linkedin.com/in/ganesh-chandrawale-7b734433/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 font-sans text-sm text-white/50 hover:text-amber-300 transition-colors"
+              className="inline-flex items-center gap-2 font-sans text-sm text-ink-500 hover:text-[#D4791A] transition-colors"
               aria-label="Follow Ganesh Chandrawale on LinkedIn"
             >
               <Linkedin size={14} aria-hidden="true" /> Follow on LinkedIn
@@ -163,14 +174,14 @@ export default async function AIInsightPost({ params }: { params: { slug: string
           </div>
 
           {/* Author card */}
-          <div className="mt-10 bg-white/5 border border-white/10 rounded-sm p-6 flex items-start gap-4">
-            <div className="w-10 h-10 rounded-full bg-amber-500/20 border border-amber-400/30 flex items-center justify-center flex-shrink-0" aria-hidden="true">
-              <span className="font-display text-amber-300 font-bold text-sm">GC</span>
+          <div className="mt-10 bg-white border border-ink-100 rounded-sm p-6 flex items-start gap-4">
+            <div className="w-10 h-10 rounded-full bg-[#0F4C5C] flex items-center justify-center flex-shrink-0" aria-hidden="true">
+              <span className="font-display text-white font-bold text-sm">GC</span>
             </div>
             <div>
-              <div className="font-sans text-sm font-semibold text-white">Ganesh Chandrawale</div>
-              <div className="font-sans text-xs text-white/40 mt-0.5 mb-2">Solutions Architect · DXC Technology · London, UK</div>
-              <p className="font-body text-xs text-white/60 leading-relaxed">
+              <div className="font-sans text-sm font-semibold text-[#0F4C5C]">Ganesh Chandrawale</div>
+              <div className="font-sans text-xs text-ink-400 mt-0.5 mb-2">Solutions Architect · DXC Technology · London, UK</div>
+              <p className="font-body text-xs text-ink-600 leading-relaxed">
                 15+ years delivering digital transformations across Insurance, Telecoms and Rail.
                 Writing about AI, architecture and the future of work.
               </p>

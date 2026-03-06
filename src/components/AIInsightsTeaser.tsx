@@ -45,23 +45,23 @@ export default function AIInsightsTeaser() {
   }, [])
 
   return (
-    <section id="ai-insights" ref={sectionRef} className="py-24 md:py-32 bg-[#0F4C5C]">
+    <section id="ai-insights" ref={sectionRef} className="py-24 md:py-32 bg-[#FDF9F3]">
       <div className="max-w-6xl mx-auto px-6">
         {/* Header */}
         <div className="reveal flex items-center gap-3 mb-4">
           <div className="h-px w-8 bg-[#D4791A]" />
-          <span className="font-sans text-xs tracking-[0.2em] uppercase text-amber-300 font-medium">
+          <span className="font-sans text-xs tracking-[0.2em] uppercase text-[#D4791A] font-medium">
             AI & the future of work
           </span>
         </div>
         <div className="md:flex md:items-end md:justify-between mb-12">
-          <h2 className="reveal font-display text-4xl md:text-5xl font-bold text-white leading-tight max-w-xl">
+          <h2 className="reveal font-display text-4xl md:text-5xl font-bold text-[#0F4C5C] leading-tight max-w-xl">
             Thoughts on where<br />
-            <em className="font-normal text-amber-200">technology is taking us.</em>
+            <em className="font-normal text-ink-700">technology is taking us.</em>
           </h2>
           <Link
             href="/ai-insights"
-            className="reveal hidden md:inline-flex items-center gap-2 font-sans text-sm text-amber-300 hover:text-white transition-colors mt-4 md:mt-0"
+            className="reveal hidden md:inline-flex items-center gap-2 font-sans text-sm text-[#D4791A] hover:text-[#0F4C5C] transition-colors mt-4 md:mt-0"
           >
             All insights <ArrowRight size={14} />
           </Link>
@@ -70,24 +70,29 @@ export default function AIInsightsTeaser() {
         {/* Cards */}
         <div className="grid md:grid-cols-3 gap-6">
           {featuredInsights.map((insight, i) => (
-            <div
+            <Link
               key={insight.title}
-              className="reveal bg-white/5 border border-white/10 rounded-sm p-6 card-hover hover:bg-white/10 transition-colors cursor-pointer group"
+              href={`/ai-insights/${
+                insight.title.includes('Indian road') ? 'ai-industry-indian-road' :
+                insight.title.includes('overwhelmed') ? 'riding-technology-waves' :
+                'architectural-audit-amazon-kiro'
+              }`}
+              className="reveal bg-white border border-ink-100 rounded-sm p-6 card-hover group block"
             >
               <div className="flex items-center justify-between mb-4">
-                <span className="font-mono text-xs text-amber-300">{insight.date}</span>
-                <span className="font-sans text-xs text-white/40">{insight.readTime}</span>
+                <span className="font-mono text-xs text-[#D4791A]">{insight.date}</span>
+                <span className="font-sans text-xs text-ink-400">{insight.readTime}</span>
               </div>
-              <h3 className="font-display text-lg font-bold text-white leading-snug mb-3 group-hover:text-amber-200 transition-colors">
+              <h3 className="font-display text-lg font-bold text-[#0F4C5C] leading-snug mb-3 group-hover:text-[#1B7A8A] transition-colors">
                 {insight.title}
               </h3>
-              <p className="font-body text-sm text-white/60 leading-relaxed">
+              <p className="font-body text-sm text-ink-600 leading-relaxed">
                 {insight.excerpt}
               </p>
-              <div className="mt-4 flex items-center gap-1 font-sans text-xs text-amber-300 opacity-0 group-hover:opacity-100 transition-opacity">
+              <div className="mt-4 flex items-center gap-1 font-sans text-xs text-[#D4791A]">
                 Read more <ArrowRight size={11} />
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 
@@ -95,7 +100,7 @@ export default function AIInsightsTeaser() {
         <div className="reveal mt-8 md:hidden">
           <Link
             href="/ai-insights"
-            className="inline-flex items-center gap-2 font-sans text-sm text-amber-300 hover:text-white transition-colors"
+            className="inline-flex items-center gap-2 font-sans text-sm text-[#D4791A] hover:text-[#0F4C5C] transition-colors"
           >
             All insights <ArrowRight size={14} />
           </Link>
