@@ -70,11 +70,11 @@ export default function About() {
                 </div>
                 <ul className="space-y-3 font-body text-sm text-ink-700 leading-relaxed">
                   {[
-                    'An IT change without a business change is an illusion.',
-                    'Skills matter more than seniority.',
                     'Real-world experience is the best teacher.',
+                    'Skills matter more than seniority.',
                     'Documentation isn\'t boring — it\'s how knowledge survives you.',
                     'The best architecture decisions are deeply human ones.',
+                    'An IT change without a business change is an illusion.'
                   ].map((belief) => (
                     <li key={belief} className="flex items-start gap-3">
                       <span className="text-[#D4791A] mt-0.5 flex-shrink-0">—</span>

@@ -5,7 +5,7 @@ const journey = [
   {
     period: '2010 – 2013',
     role: 'PL/SQL & Java Developer',
-    company: 'Cognizant · T-Systems, Germany',
+    company: 'Cognizant · T-Systems, Pune, India',
     colour: '#737373',
     story: `Started as a Java developer after fast-track training — then immediately landed on a PL/SQL project I wasn't hired for. Learned on the job, became one of the trusted juniors, and discovered my first big lesson: everyone must understand what they're working towards, no matter how small their role.`,
     learning: 'Real-world experience is the best teacher.',
