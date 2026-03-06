@@ -96,10 +96,29 @@ export default function Volunteering() {
               </div>
 
               <div className="pt-6 border-t border-ink-100">
-                <p className="font-body text-xs text-ink-600 leading-relaxed italic">
+                <p className="font-body text-xs text-ink-600 leading-relaxed italic mb-6">
                   "Coaching isn't just about technique — it's about building confidence, 
                   teaching resilience, and helping young players fall in love with the game."
                 </p>
+
+                <div className="space-y-2">
+                  <div className="font-sans text-xs tracking-widest uppercase text-ink-400 mb-3">
+                    Accreditations
+                  </div>
+                  <div className="grid grid-cols-2 gap-2">
+                    {[
+                      'Enhanced DBS Checked',
+                      'ECB Core Coach (Level 2)',
+                      'ECB Safe Hands Certified',
+                      'First Aid Certified',
+                    ].map((cert) => (
+                      <div key={cert} className="flex items-start gap-2">
+                        <span className="text-[#D4791A] mt-0.5 flex-shrink-0 text-xs">✓</span>
+                        <span className="font-sans text-xs text-ink-700 leading-tight">{cert}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
               </div>
 
               <div className="h-0.5 mt-6 rounded-full bg-[#D4791A] opacity-20" />
