@@ -28,6 +28,15 @@ const projects = [
     excerpt: 'Designed and delivered a greenfield billing capability from one-line requirements to production-ready.',
     colour: '#0F4C5C',
   },
+  {
+    slug: 'settlements-london-market',
+    tag: 'Domain Architecture · Financial Controls',
+    title: 'Settlements (London Market)',
+    subtitle: 'Multi-party Financial Flows',
+    period: '2023 – Present',
+    excerpt: 'Designing financial certainty in a multi-party market—making complexity defensible, auditable, and scalable.',
+    colour: '#1B7A8A',
+  },
 ]
 
 export default function ProjectsPage() {

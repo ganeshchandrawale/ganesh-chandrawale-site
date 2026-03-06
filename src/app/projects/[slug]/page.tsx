@@ -92,6 +92,85 @@ I build trust by:
 This is how greenfield Billing becomes a capability that Finance can rely on.
     `,
   },
+  {
+    slug: 'settlements-london-market',
+    title: 'Settlements (London Market)',
+    subtitle: 'Designing financial certainty in a multi-party market',
+    tag: 'Domain Architecture · Financial Controls',
+    period: '2023 – Present',
+    colour: '#1B7A8A',
+    content: `
+Settlements in the London Market sit at the intersection of **financial risk, market practice, and regulatory scrutiny**. They are not simply "payments"; they are the point at which obligations become real, cash moves across parties, and exceptions become visible.
+
+My work in Settlements focuses on making this complexity **defensible, auditable, and scalable**—without breaking the real-world practices the market relies on.
+
+---
+
+## What makes London Market settlements different
+
+London Market settlement flows are inherently **multi-party** and **exception-heavy**. They involve carriers, brokers, reinsurers, coverholders, and supporting market services—often across borders and time zones—where timing, evidence, and responsibility matter.
+
+That is why the most valuable improvements are rarely "more technology". They come from clarity on:
+
+- **Who owns what decision** and when
+- **What evidence is required** for settlement finality
+- **Where controls must exist** and where straight-through processing is safe
+- **How exceptions escalate** without losing accountability
+
+---
+
+## My focus areas in Settlements
+
+I work at domain architecture level, owning outcomes across operating models and design governance. In Settlements, that typically means:
+
+- Defining end-to-end settlement flows from agreement to instruction, execution, and reconciliation, including recoveries and exception handling.
+- Making settlement outcomes **defensible** by designing clear ownership, escalation paths, and "why" behind decision points.
+- Improving auditability through traceability of inputs, decisions, and outcomes—so settlement narratives can be reconstructed without manual effort.
+- Ensuring changes align with how the London Market processes claims and accounting/settlement activities in practice.
+
+---
+
+## How I approach settlement modernisation
+
+I start with the domain, not the system.
+
+Before proposing solution changes, I map:
+
+1. **The operating model** (roles, responsibilities, handoffs, approvals)
+2. **Control points** (where risk is created, where evidence is required)
+3. **Exception patterns** (what goes wrong in reality)
+4. **Outcomes** (what Finance, Claims, and Compliance need to be able to prove)
+
+Only then do we design automation or integration. The goal is always:
+
+**reduce friction without removing accountability**.
+
+---
+
+## The outcome I aim for
+
+A settlement capability is successful when:
+
+- Finance trusts the correctness of the outcomes
+- Claims teams can execute efficiently without workarounds
+- Exceptions are handled consistently and transparently
+- Audit and regulatory enquiries can be answered from the record, not from memory
+
+That is the standard I design for.
+
+---
+
+## If you're working on settlements change…
+
+If you're modernising London Market settlement processes, the biggest risks are usually:
+
+- "Automating" before the operating model is clear
+- Moving fast without defining ownership and escalation
+- Treating exceptions as edge cases instead of the real workload
+
+I build settlement designs that work under scrutiny—not only on a good day.
+    `,
+  },
 ]
 
 export async function generateStaticParams() {
