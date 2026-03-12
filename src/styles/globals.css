@@ -94,7 +94,10 @@ body {
   box-shadow: 0 12px 40px rgba(0,0,0,0.08);
 }
 
-/* Prose blog styles */
+/* ─────────────────────────────────────────────────────────────
+   PROSE-WARM — kept for any legacy use, but no longer used
+   in blog/ai-insights article pages
+   ───────────────────────────────────────────────────────────── */
 .prose-warm {
   font-family: 'Lora', Georgia, serif;
   line-height: 1.85;
@@ -128,4 +131,206 @@ body {
   font-style: italic;
   color: #525252;
   margin: 2rem 0;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   PROSE-ARTICLE — LinkedIn Article style
+   Used by blog/[slug]/page.tsx and ai-insights/[slug]/page.tsx
+   ───────────────────────────────────────────────────────────── */
+.prose-article {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 1.125rem;       /* 18px — LinkedIn Article body size */
+  line-height: 1.9;           /* generous breathing room between lines */
+  color: #2d2d2d;
+}
+
+/* First paragraph after the divider gets a subtle lead-in treatment */
+.prose-article > p:first-child {
+  font-size: 1.175rem;
+  color: #1a1a1a;
+}
+
+/* Paragraphs */
+.prose-article p {
+  margin-bottom: 1.6rem;
+}
+
+/* H2 — LinkedIn Article section headers: bold, teal, subtle amber underline */
+.prose-article h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.65rem;
+  font-weight: 700;
+  color: #0F4C5C;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid #D4791A;
+}
+
+/* H3 — subheadings in DM Sans caps, amber — same character as your site */
+.prose-article h3 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #D4791A;
+  margin-top: 2.25rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Strong / bold inline — teal so it pops without clashing */
+.prose-article strong {
+  color: #0F4C5C;
+  font-weight: 600;
+}
+
+/* Links */
+.prose-article a {
+  color: #D4791A;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease;
+}
+.prose-article a:hover {
+  color: #0F4C5C;
+}
+
+/* Bullet lists — LinkedIn Articles use generous list spacing */
+.prose-article ul {
+  padding-left: 1.5rem;
+  margin-bottom: 1.6rem;
+  list-style-type: disc;
+}
+.prose-article ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1.6rem;
+  list-style-type: decimal;
+}
+.prose-article li {
+  margin-bottom: 0.6rem;
+  padding-left: 0.25rem;
+}
+/* Emoji-led list items (common in your LinkedIn posts) get slightly more space */
+.prose-article li + li {
+  margin-top: 0.15rem;
+}
+
+/* Blockquote — pull quote style, like LinkedIn's highlighted quote block */
+.prose-article blockquote {
+  border-left: 4px solid #D4791A;
+  padding: 0.75rem 1.25rem;
+  margin: 2.5rem 0;
+  background-color: #FDF9F3;
+  border-radius: 0 6px 6px 0;
+  font-style: italic;
+  font-size: 1.15rem;
+  color: #0F4C5C;
+  line-height: 1.75;
+}
+.prose-article blockquote p {
+  margin-bottom: 0;
+}
+
+/* Horizontal rule — matches your existing divider aesthetic */
+.prose-article hr {
+  border: none;
+  border-top: 1px solid #e5e5e5;
+  margin: 2.5rem 0;
+}
+
+/* Inline code */
+.prose-article code {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.875rem;
+  background-color: #FEF3C7;
+  color: #0F4C5C;
+  padding: 0.15rem 0.4rem;
+  border-radius: 3px;
+}
+
+/* Code blocks */
+.prose-article pre {
+  background-color: #0F4C5C;
+  color: #FEF3C7;
+  padding: 1.25rem 1.5rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  margin: 2rem 0;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+.prose-article pre code {
+  background: none;
+  color: inherit;
+  padding: 0;
+  font-size: inherit;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   CALLOUT BLOCKS — unchanged from original
+   Used inside Markdown via raw HTML divs
+   ───────────────────────────────────────────────────────────── */
+.customer-prompts {
+  background: linear-gradient(135deg, #FEF3C7 0%, #FDF9F3 100%);
+  border-left: 4px solid var(--amber-warm);
+  border-radius: 0 8px 8px 0;
+  padding: 1.5rem;
+  margin: 2.5rem 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #0F4C5C;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(212, 121, 26, 0.1);
+}
+
+.customer-prompts p {
+  margin: 0.75rem 0;
+  font-style: normal;
+}
+
+.customer-prompts p:first-child {
+  margin-top: 0;
+}
+
+.customer-prompts p:last-child {
+  margin-bottom: 0;
+}
+
+.headline-quote {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #0F4C5C;
+  background: linear-gradient(135deg, #FDF9F3 0%, #FFFFFF 100%);
+  border: 2px solid var(--amber-warm);
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 3rem 0;
+  line-height: 1.4;
+  font-style: normal;
+  box-shadow: 0 8px 24px rgba(212, 121, 26, 0.15);
+  position: relative;
+}
+
+.headline-quote::before {
+  content: '"';
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  font-size: 3rem;
+  color: var(--amber-warm);
+  font-family: 'Playfair Display', serif;
+  line-height: 1;
+}
+
+.headline-quote::after {
+  content: '"';
+  position: absolute;
+  bottom: -10px;
+  right: 20px;
+  font-size: 3rem;
+  color: var(--amber-warm);
+  font-family: 'Playfair Display', serif;
+  line-height: 1;
 }

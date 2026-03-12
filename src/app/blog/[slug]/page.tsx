@@ -95,7 +95,7 @@ export default async function BlogPost({ params }: { params: { slug: string } })
       <main className="min-h-screen bg-[#FAF7F2] pt-28 pb-24">
         <div className="max-w-2xl mx-auto px-6">
 
-          {/* Semantic breadcrumb — helps Google understand site structure */}
+          {/* Breadcrumb — unchanged */}
           <nav aria-label="Breadcrumb" className="mb-8">
             <ol className="flex items-center gap-2 font-sans text-xs text-ink-400">
               <li><Link href="/" className="hover:text-[#D4791A] transition-colors">Home</Link></li>
@@ -106,7 +106,7 @@ export default async function BlogPost({ params }: { params: { slug: string } })
             </ol>
           </nav>
 
-          {/* Meta row */}
+          {/* Meta row — unchanged */}
           <div className="flex items-center gap-4 mb-4 flex-wrap">
             <time dateTime={post.date} className="font-mono text-xs text-[#D4791A]">{post.date}</time>
             <span className="text-ink-300" aria-hidden="true">·</span>
@@ -121,27 +121,35 @@ export default async function BlogPost({ params }: { params: { slug: string } })
             )}
           </div>
 
-          {/* H1 — most important on-page SEO signal */}
+          {/* H1 — unchanged */}
           <h1 className="font-display text-4xl md:text-5xl font-bold text-[#0F4C5C] leading-tight mb-4">
             {post.title}
           </h1>
 
-          {/* Byline — reinforces author for Google E-E-A-T */}
+          {/* ADDED: Standfirst / excerpt — the LinkedIn Article "intro paragraph" */}
+          {post.excerpt && (
+            <p className="font-body text-xl text-ink-600 leading-relaxed mb-6 border-l-4 border-[#D4791A] pl-4">
+              {post.excerpt}
+            </p>
+          )}
+
+          {/* Byline — unchanged */}
           <p className="font-sans text-sm text-ink-500 mb-8">
             By <span className="font-medium text-ink-700">Ganesh Chandrawale</span>
             {' '}— Solutions Architect, London
           </p>
 
+          {/* Divider — unchanged */}
           <div className="flex items-center gap-4 mb-10" aria-hidden="true">
             <div className="h-px flex-1 bg-ink-200" />
             <div className="w-2 h-2 rounded-full bg-[#D4791A]" />
             <div className="h-px flex-1 bg-ink-200" />
           </div>
 
-          {/* Article body */}
-          <article className="prose-warm" dangerouslySetInnerHTML={{ __html: contentHtml }} />
+          {/* Article body — switched to prose-article (defined in globals.css) */}
+          <article className="prose-article" dangerouslySetInnerHTML={{ __html: contentHtml }} />
 
-          {/* Footer nav */}
+          {/* Footer nav — unchanged */}
           <div className="mt-16 pt-8 border-t border-ink-200 flex items-center justify-between flex-wrap gap-4">
             <Link href="/blog" className="inline-flex items-center gap-2 font-sans text-sm text-ink-500 hover:text-[#D4791A] transition-colors">
               <ArrowLeft size={14} aria-hidden="true" /> All posts
@@ -157,7 +165,7 @@ export default async function BlogPost({ params }: { params: { slug: string } })
             </a>
           </div>
 
-          {/* Author card — E-E-A-T signal for Google */}
+          {/* Author card — unchanged */}
           <div className="mt-10 bg-[#FDF9F3] border border-ink-100 rounded-sm p-6 flex items-start gap-4">
             <div className="w-10 h-10 rounded-full bg-[#0F4C5C] flex items-center justify-center flex-shrink-0" aria-hidden="true">
               <span className="font-display text-white font-bold text-sm">GC</span>
