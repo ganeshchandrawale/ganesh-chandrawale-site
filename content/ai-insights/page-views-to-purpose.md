@@ -59,11 +59,11 @@ If we're honest, it's almost always the latter. And AI is about to make this the
 
 Now imagine a different experience. A customer lands on your homepage and, instead of a navigation bar with ten dropdown menus, there is a simple prompt field. One box. And they type:
 
-> *"Why is my last month's bill higher than usual?"*
->
-> *"I want to buy an iPhone 17 Pro Max, Black, 1TB, on a 24-month plan."*
->
-> *"When will a technician come to fix my broadband?"*
+> "Why is my last month's bill higher than usual?"
+> 
+> "I want to buy an iPhone 17 Pro Max, Black, 1TB, on a 24-month plan."
+> 
+> "When will a technician come to fix my broadband?"
 
 In the traditional model, each of these requests would require the customer to navigate through several pages, log into a portal, click through menus, maybe wait for a call centre. In the AI-powered model, the response is immediate, personalised, and complete. The customer's purpose is fulfilled in seconds.
 
@@ -78,10 +78,10 @@ The KPMG Global Customer Experience Excellence report for 2024–2025 — based 
 Let me put the contrast as clearly as I can, because I think this is the crux of the strategic challenge:
 
 **The traditional approach asks:**
-> *"The customer wants to view their bill. How do we make that possible?"*
+> "The customer wants to view their bill. How do we make that possible?"
 
 **The AI-powered approach asks:**
-> *"Why does the customer want to view their bill? And how do we resolve that underlying need before they even have to navigate anywhere?"*
+> "Why does the customer want to view their bill? And how do we resolve that underlying need before they even have to navigate anywhere?"
 
 A customer who checks their bill usually has one of a small number of reasons: they think it's too high, they want to dispute a charge, they're wondering if they're on the right plan, or they need to share the information with someone else. Each of these is a distinct need, and each has a distinct resolution. The traditional model treats them all the same — here's a PDF of your bill, good luck. The AI model identifies which scenario applies and responds accordingly.
 
@@ -146,7 +146,7 @@ This means that the design of your AI customer experience is also a brand design
 
 Let me close with the headline message, because I think it is worth stating plainly:
 
-> ***Stop measuring your customer success based on how long they stay on your website. Start measuring it based on how quickly they are able to get the job done.***
+> **Stop measuring your customer success based on how long they stay on your website. Start measuring it based on how quickly they are able to get the job done.**
 
 This is not about technology for technology's sake. It is about fundamentally respecting your customers — their time, their intent, and their intelligence. The organisations that make this shift will not just improve their customer satisfaction scores. They will build the kind of relationships that drive loyalty, reduce churn, and create genuine competitive advantage.
 
