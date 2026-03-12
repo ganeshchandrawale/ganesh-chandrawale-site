@@ -51,19 +51,19 @@ If those questions are not answered first, automation simply accelerates confusi
 
 I work domain-first and outcome-driven. My approach is:
 
-1. **Clarify the business intent**  
+- **Clarify the business intent**  
    Minimal requirements are not a blocker—they are a signal that the domain needs structure.
 
-2. **Define the operating model**  
+- **Define the operating model**  
    Ownership, approvals, exception handling, and control points.
 
-3. **Design for straight-through processing**  
+- **Design for straight-through processing**  
    Make the default path automated, but keep accountability visible.
 
-4. **Prove correctness early**  
+- **Prove correctness early**  
    Finance confidence is earned through clarity, traceability, and defensible rules—not through technical claims.
 
-5. **Deliver through governance**  
+- **Deliver through governance**  
    I work through design authority and structured approval, ensuring the design is understood and defendable before build and UAT.
 
 ---
@@ -205,7 +205,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
     <>
       <Nav />
       <main className="min-h-screen bg-[#FAF7F2] pt-28 pb-24">
-        <article className="max-w-3xl mx-auto px-6">
+        <article className="max-w-2xl mx-auto px-6">
           <Link
             href="/projects"
             className="inline-flex items-center gap-2 font-sans text-sm text-[#D4791A] hover:text-[#0F4C5C] transition-colors mb-8"
@@ -214,6 +214,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
             Back to Notable Work
           </Link>
 
+          {/* Header block */}
           <div className="mb-8">
             <div className="flex items-center justify-between flex-wrap gap-2 mb-4">
               <span className="font-mono text-xs tracking-wider" style={{ color: project.colour }}>
@@ -221,23 +222,26 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
               </span>
               <span className="font-sans text-xs text-ink-400">{project.period}</span>
             </div>
-            <h1 className="font-display text-4xl md:text-5xl font-bold text-[#0F4C5C] leading-tight mb-3">
+            <h1 className="font-display text-4xl md:text-5xl font-bold text-[#0F4C5C] leading-tight mb-4">
               {project.title}
             </h1>
-            <p className="font-display text-xl text-ink-600 leading-relaxed">
+
+            {/* Subtitle as standfirst — matches blog/AI insights treatment */}
+            <p className="font-body text-xl text-ink-600 leading-relaxed mb-6 border-l-4 border-[#D4791A] pl-4">
               {project.subtitle}
             </p>
           </div>
 
+          {/* Divider — matches blog/AI insights pages */}
+          <div className="flex items-center gap-4 mb-10" aria-hidden="true">
+            <div className="h-px flex-1 bg-ink-200" />
+            <div className="w-2 h-2 rounded-full bg-[#D4791A]" />
+            <div className="h-px flex-1 bg-ink-200" />
+          </div>
+
+          {/* Article body — same prose-article class as blog and AI insights */}
           <div
-            className="prose prose-lg max-w-none
-              prose-headings:font-display prose-headings:text-[#0F4C5C]
-              prose-h2:text-2xl prose-h2:font-bold prose-h2:mt-12 prose-h2:mb-4
-              prose-p:font-body prose-p:text-ink-700 prose-p:leading-relaxed
-              prose-strong:text-[#0F4C5C] prose-strong:font-semibold
-              prose-ul:font-body prose-ul:text-ink-700
-              prose-li:my-1
-              prose-hr:border-ink-200 prose-hr:my-8"
+            className="prose-article"
             dangerouslySetInnerHTML={{ __html: parseMarkdown(project.content) }}
           />
         </article>
