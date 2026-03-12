@@ -57,7 +57,7 @@ export default function Hero() {
           >
             <div className="h-px w-8 bg-[#D4791A]" />
             <span className="font-sans text-xs tracking-[0.2em] uppercase text-[#D4791A] font-medium">
-              Solutions Architect · London, UK
+              Solutions Architect · London Market Insurance
             </span>
           </div>
 
