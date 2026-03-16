@@ -48,7 +48,7 @@ export default function AIInsightsTeaser() {
   }, [])
 
   return (
-    <section id="ai-insights" ref={sectionRef} className="py-24 md:py-32 bg-[#FDF9F3]">
+    <section id="ai-insights" ref={sectionRef} className="py-16 md:py-24 bg-[#FDF9F3]">
       <div className="max-w-6xl mx-auto px-6">
         {/* Header */}
         <div className="reveal flex items-center gap-3 mb-4">

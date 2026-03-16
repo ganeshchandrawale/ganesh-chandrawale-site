@@ -93,9 +93,9 @@ export const metadata: Metadata = {
   },
 
   // ── Verification (add your codes once you have them) ─────────────────────
-  // verification: {
-  //   google: 'YOUR_GOOGLE_SEARCH_CONSOLE_CODE',
-  // },
+  verification: {
+    google: 'YOUR_GOOGLE_SEARCH_CONSOLE_CODE', // Replace with your actual verification code
+  },
 }
 
 // ── JSON-LD Structured Data (Person schema — helps Google show rich results) ──

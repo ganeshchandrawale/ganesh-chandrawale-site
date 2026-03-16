@@ -11,37 +11,37 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const staticPages: MetadataRoute.Sitemap = [
     {
-      url: BASE_URL,
+      url: `${BASE_URL}/`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 1.0,
     },
     {
-      url: `${BASE_URL}/blog`,
+      url: `${BASE_URL}/blog/`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.9,
     },
     {
-      url: `${BASE_URL}/ai-insights`,
+      url: `${BASE_URL}/ai-insights/`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.9,
     },
     {
-      url: `${BASE_URL}/projects`,
+      url: `${BASE_URL}/projects/`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.9,
     },
     {
-      url: `${BASE_URL}/projects/billing-transformation`,
+      url: `${BASE_URL}/projects/billing-transformation/`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: `${BASE_URL}/projects/settlements-london-market`,
+      url: `${BASE_URL}/projects/settlements-london-market/`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
@@ -49,14 +49,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ]
 
   const blogUrls: MetadataRoute.Sitemap = blogPosts.map((post) => ({
-    url: `${BASE_URL}/blog/${post.slug}`,
+    url: `${BASE_URL}/blog/${post.slug}/`,
     lastModified: new Date(post.date),
     changeFrequency: 'monthly',
     priority: 0.7,
   }))
 
   const aiUrls: MetadataRoute.Sitemap = aiInsights.map((post) => ({
-    url: `${BASE_URL}/ai-insights/${post.slug}`,
+    url: `${BASE_URL}/ai-insights/${post.slug}/`,
     lastModified: new Date(post.date),
     changeFrequency: 'monthly',
     priority: 0.7,

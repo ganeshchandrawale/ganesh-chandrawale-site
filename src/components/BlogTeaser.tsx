@@ -48,7 +48,7 @@ export default function BlogTeaser() {
   }, [])
 
   return (
-    <section id="blog" ref={sectionRef} className="py-24 md:py-32 bg-white">
+    <section id="blog" ref={sectionRef} className="py-16 md:py-24 bg-white">
       <div className="max-w-6xl mx-auto px-6">
         {/* Header */}
         <div className="reveal flex items-center gap-3 mb-4">
