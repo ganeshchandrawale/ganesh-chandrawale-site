@@ -6,6 +6,7 @@ import Journey from '@/components/Journey'
 import Volunteering from '@/components/Volunteering'
 import NotableWork from '@/components/NotableWork'
 import LatestProjects from '@/components/LatestProjects'
+import BlogTeaser from '@/components/BlogTeaser'
 import AIInsightsTeaser from '@/components/AIInsightsTeaser'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
@@ -100,6 +101,7 @@ export default function Home() {
         <Volunteering />
         <NotableWork />
         <LatestProjects />
+        <BlogTeaser />
         <AIInsightsTeaser />
         <Contact />
       </main>
