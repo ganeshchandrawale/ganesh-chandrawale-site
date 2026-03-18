@@ -4,47 +4,47 @@ import { useEffect, useRef } from 'react'
 const projects = [
   {
     tag: 'AWS · Microservices · Event-Driven',
-    title: 'London Market Transformation — Billing Capability',
-    company: 'DXC Technology · Velonetic',
+    title: 'Greenfield Billing Capability',
+    company: 'Regulated Industry, UK',
     period: '2023 – Present',
-    description: 'Designed and delivered a greenfield billing capability for the UK insurance market transformation — the "missing piece". Started with one-liner requirements, worked with BAs to build them to standard, then architected a solution using AWS services, Java microservices, webhooks and event-driven patterns. Approved by TDA on first presentation.',
-    outcomes: ['Delivered from 0 to production-ready', 'Standardised requirements process across domain', 'Reduced tech debt backlog by 30%'],
+    description: 'Designed a greenfield billing capability from minimal business intent through to automated financial processing. Worked with business analysts to bring requirements to standard, then designed a solution using AWS services, Java microservices, and event-driven patterns. An illustrative example of domain-first architecture in a regulated context.',
+    outcomes: ['Domain structured before solution designed', 'Straight-through processing with embedded controls', 'Requirements process standardised across the domain'],
     colour: '#0F4C5C',
   },
   {
     tag: 'AWS · Legacy Migration · DevOps',
     title: 'Legacy Application Migration to AWS',
-    company: 'Cognizant · Telefonica O2',
+    company: 'Telecoms, UK',
     period: '2018',
-    description: 'Three legacy apps needed migrating from Spanish data centres to AWS — with 3 months to go before a DC licence deadline. Discovered they were incompatible with lift-and-shift. Presented an alternative modernisation plan, got it approved, and delivered all three applications with penetration testing complete and 3 days to spare. Solo-architected the full high and low-level design.',
-    outcomes: ['Saved client thousands of pounds in DC licence costs', 'Delivered 3 months ahead of penalty clause', '100% technology compliance achieved'],
+    description: 'Three legacy applications needed migrating from ageing data centres to AWS against a hard deadline. Discovered they were incompatible with lift-and-shift. Presented an alternative modernisation approach, secured approval, and delivered all three applications with penetration testing complete ahead of the deadline.',
+    outcomes: ['Avoided significant licence cost exposure', 'Delivered ahead of contractual deadline', 'Full technology compliance achieved'],
     colour: '#D4791A',
   },
   {
     tag: 'BPM · Process Automation · UX',
-    title: 'Minor Works — From Coffee Chat to Product',
-    company: 'Cognizant · Network Rail',
+    title: 'Work Management Platform',
+    company: 'Infrastructure, UK',
     period: '2020 – 2021',
-    description: 'A casual conversation about a colleague\'s Friday reporting nightmare became a full product. Delivered a work management platform that replaced email-based processes, produced 15+ automated reports, and let the team take on significantly more work with the same headcount. Later replicated for other departments after the client started "showing it off" in SLT meetings.',
+    description: 'A conversation about a manual reporting burden became a full product. Delivered a work management platform that replaced email-based processes, produced 15+ automated reports, and enabled the team to take on significantly more work with the same headcount. Later replicated for other departments.',
     outcomes: ['Eliminated hours of weekly manual reporting', 'Team capacity increased with same headcount', 'Replicated across additional departments'],
     colour: '#1B7A8A',
   },
   {
     tag: 'Java · Automation · IT Ops',
     title: 'L2 Support Automation Utility',
-    company: 'Cognizant · Telefonica O2',
+    company: 'Telecoms, UK',
     period: '2015',
-    description: 'Identified that a single category of tickets made up 50% of L2 support volume — always same root cause, same fix. Built a Java utility that queried the DB, detected the issue proactively and applied the resolution automatically. Demonstrated in non-prod, deployed to production within weeks. Ticket volume halved overnight.',
+    description: 'Identified that a single ticket category made up 50% of L2 support volume — always the same root cause, same fix. Built a Java utility that detected the issue proactively and applied the resolution automatically. Ticket volume halved within weeks of deployment.',
     outcomes: ['50% reduction in support ticket volume', 'Freed team capacity for higher-value work', 'Deployed to production within weeks of demo'],
     colour: '#737373',
   },
   {
     tag: 'Hiring · Process Design · Leadership',
     title: 'Recruitment Process Transformation',
-    company: 'DXC Technology',
+    company: 'Enterprise IT, London',
     period: '2023',
-    description: 'Inherited a hiring process generating 20+ CVs/week with 80% rejection rate and 25% interview success. Built a structured interview matrix, rewrote job descriptions based on real responsibilities, aligned recruitment partners, and founded a Capability Guild for onboarding. End result: 5 interviews to hire 3 people, vs 20 interviews to hire fewer than 5 previously.',
-    outcomes: ['CV volume dropped 80%, quality improved dramatically', 'Interview success rate doubled to 50%+', 'Founded System Architecture Guild (40+ members)'],
+    description: 'Inherited a hiring process with high CV volume, low quality, and poor interview conversion. Built a structured interview matrix, rewrote job descriptions based on real responsibilities, aligned recruitment partners, and founded a Capability Guild for onboarding. Conversion improved significantly with far fewer interviews.',
+    outcomes: ['CV volume dropped, quality improved dramatically', 'Interview success rate more than doubled', 'Founded Architecture Guild (40+ members)'],
     colour: '#0F4C5C',
   },
 ]
@@ -111,7 +111,7 @@ export default function NotableWork() {
               <h3 className="font-display text-xl font-bold text-[#0F4C5C] mb-1 leading-snug">
                 {project.title}
               </h3>
-              <div className="font-sans text-xs text-ink-500 mb-4">{project.company}</div>
+
 
               {/* Description */}
               <p className="font-body text-sm text-ink-700 leading-relaxed mb-5 flex-1">

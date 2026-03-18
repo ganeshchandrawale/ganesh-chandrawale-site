@@ -22,14 +22,14 @@ const projects: Project[] = [
   {
     slug: 'billing-transformation',
     title: 'Billing Transformation',
-    subtitle: 'Turning one-line intent into trusted, automated financial capability',
+    subtitle: 'Turning intent into trusted, automated financial capability',
     tag: 'AWS · Microservices · Event-Driven',
     period: '2023 – Present',
     colour: '#0F4C5C',
     content: `
 Billing is a Finance-critical capability. If Billing is wrong, everything downstream becomes noisy: reconciliation, reporting, controls, and stakeholder confidence.
 
-I led the design and delivery of a **greenfield Billing capability** from one-line business requirements through design approval, delivery oversight, UAT, and production readiness—built to be **fully automated**, control-aware, and trusted by Finance.
+This piece explores the architectural considerations behind designing a **greenfield Billing capability** — from clarifying business intent through to automated, control-aware financial processing.
 
 ---
 
@@ -47,30 +47,30 @@ If those questions are not answered first, automation simply accelerates confusi
 
 ---
 
-## How I build Billing capabilities
+## One way to think about Billing architecture
 
-I work domain-first and outcome-driven. My approach is:
+A domain-first, outcome-driven approach tends to work well. The key considerations are:
 
-- **Clarify the business intent**  
-   Minimal requirements are not a blocker—they are a signal that the domain needs structure.
+- **Clarify the business intent**
+  Minimal requirements are not a blocker — they are a signal that the domain needs structure first.
 
-- **Define the operating model**  
-   Ownership, approvals, exception handling, and control points.
+- **Define the operating model**
+  Ownership, approvals, exception handling, and control points need to be explicit before automation is designed.
 
-- **Design for straight-through processing**  
-   Make the default path automated, but keep accountability visible.
+- **Design for straight-through processing**
+  Make the default path automated, but keep accountability visible at every step.
 
-- **Prove correctness early**  
-   Finance confidence is earned through clarity, traceability, and defensible rules—not through technical claims.
+- **Prove correctness early**
+  Finance confidence is earned through clarity, traceability, and defensible rules — not through technical claims.
 
-- **Deliver through governance**  
-   I work through design authority and structured approval, ensuring the design is understood and defendable before build and UAT.
+- **Deliver through governance**
+  Structured design approval ensures the architecture is understood and defensible before build begins.
 
 ---
 
 ## What "good" looks like
 
-A Billing capability is successful when:
+A Billing capability is in a good place when:
 
 - Finance can explain and defend outcomes
 - Processing is automated, not workaround-driven
@@ -79,39 +79,39 @@ A Billing capability is successful when:
 
 ---
 
-## My style of leadership in Billing change
+## Stakeholder confidence in Billing change
 
-Billing work is often where stakeholder confidence is fragile—especially when previous attempts have been inconsistent or overly technical.
+Billing work is often where stakeholder confidence is fragile — especially where previous attempts have been inconsistent or overly technical.
 
-I build trust by:
+Trust tends to build when:
 
-- Staying close to Finance outcomes and language
-- Making decisions explicit and traceable
-- Being clear about what the automation does *and does not* decide
-- Keeping the design explainable to non-technical stakeholders
+- Outcomes are framed in Finance language, not system language
+- Decisions are explicit and traceable
+- The automation's scope is clearly communicated — what it decides, and what it does not
+- The design remains explainable to non-technical stakeholders
 
-This is how greenfield Billing becomes a capability that Finance can rely on.
+This is how a Billing capability becomes something Finance can rely on, not just something IT can point to.
     `,
   },
   {
     slug: 'settlements-london-market',
-    title: 'Settlements (London Market)',
-    subtitle: 'Designing financial certainty in a multi-party market',
+    title: 'Settlements Architecture',
+    subtitle: 'Designing financial certainty in multi-party settlement flows',
     tag: 'Domain Architecture · Financial Controls',
     period: '2023 – Present',
     colour: '#1B7A8A',
     content: `
-Settlements in the London Market sit at the intersection of **financial risk, market practice, and regulatory scrutiny**. They are not simply "payments"; they are the point at which obligations become real, cash moves across parties, and exceptions become visible.
+Settlements in regulated financial markets sit at the intersection of **financial risk, market practice, and regulatory scrutiny**. They are not simply "payments" — they are the point at which obligations become real, cash moves across parties, and exceptions become visible.
 
-My work in Settlements focuses on making this complexity **defensible, auditable, and scalable**—without breaking the real-world practices the market relies on.
+This piece explores architectural considerations for making settlement complexity **defensible, auditable, and scalable** — without breaking the real-world practices the market relies on.
 
 ---
 
-## What makes London Market settlements different
+## What makes multi-party settlements architecturally interesting
 
-London Market settlement flows are inherently **multi-party** and **exception-heavy**. They involve carriers, brokers, reinsurers, coverholders, and supporting market services—often across borders and time zones—where timing, evidence, and responsibility matter.
+Settlement flows in complex markets are inherently **multi-party** and **exception-heavy**. They involve multiple counterparties, often across borders and time zones, where timing, evidence, and responsibility all matter.
 
-That is why the most valuable improvements are rarely "more technology". They come from clarity on:
+The most valuable architectural improvements rarely come from "more technology". They come from clarity on:
 
 - **Who owns what decision** and when
 - **What evidence is required** for settlement finality
@@ -120,56 +120,52 @@ That is why the most valuable improvements are rarely "more technology". They co
 
 ---
 
-## My focus areas in Settlements
+## Key architectural focus areas
 
-I work at domain architecture level, owning outcomes across operating models and design governance. In Settlements, that typically means:
+Working at domain architecture level, the considerations that tend to matter most are:
 
-- Defining end-to-end settlement flows from agreement to instruction, execution, and reconciliation, including recoveries and exception handling.
-- Making settlement outcomes **defensible** by designing clear ownership, escalation paths, and "why" behind decision points.
-- Improving auditability through traceability of inputs, decisions, and outcomes—so settlement narratives can be reconstructed without manual effort.
-- Ensuring changes align with how the London Market processes claims and accounting/settlement activities in practice.
+- Defining end-to-end settlement flows from agreement to instruction, execution, and reconciliation — including recoveries and exception handling.
+- Making settlement outcomes **defensible** through clear ownership, escalation paths, and explicit decision rationale.
+- Improving auditability through traceability of inputs, decisions, and outcomes — so settlement narratives can be reconstructed without manual effort.
+- Ensuring architectural changes align with how the market actually processes accounting and settlement activities in practice.
 
 ---
 
-## How I approach settlement modernisation
+## An illustrative approach to settlement modernisation
 
-I start with the domain, not the system.
+Starting with the domain rather than the system tends to produce more durable designs. Before proposing solution changes, it helps to map:
 
-Before proposing solution changes, I map:
+1. **The operating model** — roles, responsibilities, handoffs, approvals
+2. **Control points** — where risk is created, where evidence is required
+3. **Exception patterns** — what goes wrong in practice, not just in theory
+4. **Outcomes** — what Finance and Compliance need to be able to prove
 
-1. **The operating model** (roles, responsibilities, handoffs, approvals)
-2. **Control points** (where risk is created, where evidence is required)
-3. **Exception patterns** (what goes wrong in reality)
-4. **Outcomes** (what Finance, Claims, and Compliance need to be able to prove)
-
-Only then do we design automation or integration. The goal is always:
+Only then does automation or integration design make sense. The goal is always:
 
 **reduce friction without removing accountability**.
 
 ---
 
-## The outcome I aim for
+## What a well-designed settlement capability looks like
 
-A settlement capability is successful when:
+A settlement architecture is in a good place when:
 
-- Finance trusts the correctness of the outcomes
-- Claims teams can execute efficiently without workarounds
+- Finance trusts the correctness of outcomes
+- Operational teams can execute efficiently without workarounds
 - Exceptions are handled consistently and transparently
 - Audit and regulatory enquiries can be answered from the record, not from memory
 
-That is the standard I design for.
-
 ---
 
-## If you're working on settlements change…
+## Common risks in settlement modernisation
 
-If you're modernising London Market settlement processes, the biggest risks are usually:
+The patterns that tend to cause problems:
 
-- "Automating" before the operating model is clear
-- Moving fast without defining ownership and escalation
-- Treating exceptions as edge cases instead of the real workload
+- Automating before the operating model is clear
+- Moving fast without defining ownership and escalation paths
+- Treating exceptions as edge cases rather than the real workload
 
-I build settlement designs that work under scrutiny—not only on a good day.
+Settlement designs that hold up under scrutiny are built around these risks, not despite them.
     `,
   },
 ]

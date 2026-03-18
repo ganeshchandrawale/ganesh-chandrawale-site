@@ -10,11 +10,11 @@ const BASE_URL = 'https://ganeshchandrawale.info'
 export const metadata: Metadata = {
   title: 'AI Insights — The Future of Work & Technology',
   description:
-    'Ganesh Chandrawale writes about AI, the future of work, and how technology is reshaping enterprise IT. Practical perspectives from a Solutions Architect with 15+ years of experience.',
+    'Ganesh Chandrawale writes about AI, the future of work, and how technology is reshaping enterprise IT. Practical perspectives from a Solution Architect with 15+ years of experience.',
   alternates: { canonical: '/ai-insights' },
   openGraph: {
-    title: 'AI Insights | Ganesh Chandrawale — Solutions Architect',
-    description: 'Practical perspectives on AI and the future of work from a Solutions Architect with 15+ years in enterprise technology.',
+    title: 'AI Insights | Ganesh Chandrawale — Solution Architect',
+    description: 'Practical perspectives on AI and the future of work from a Solution Architect with 15+ years in enterprise technology.',
     url: `${BASE_URL}/ai-insights`,
     type: 'website',
   },

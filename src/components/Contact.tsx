@@ -43,7 +43,7 @@ export default function Contact() {
 
         <div className="reveal flex flex-wrap items-center justify-center gap-4 mb-8">
           <a
-            href="mailto:ganesh.chandrawale@gmail.com"
+            href="mailto:g.chandrawale@gmail.com"
             className="inline-flex items-center gap-2 bg-white text-[#0F4C5C] font-sans font-medium text-sm px-6 py-3 rounded-sm hover:bg-amber-100 transition-colors"
           >
             <Mail size={16} />

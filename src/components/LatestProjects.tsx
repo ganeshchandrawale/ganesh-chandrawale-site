@@ -84,7 +84,7 @@ export default function LatestProjects() {
               <h3 className="font-display text-xl font-bold text-[#0F4C5C] mb-1 leading-snug">
                 {project.title}
               </h3>
-              <div className="font-sans text-xs text-ink-500 mb-4">{project.subtitle}</div>
+
 
               {/* Description */}
               <p className="font-body text-sm text-ink-700 leading-relaxed mb-5 flex-1">

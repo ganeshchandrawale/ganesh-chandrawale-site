@@ -12,10 +12,10 @@ const journey = [
   },
   {
     period: '2013 – 2018',
-    role: 'L3 Engineer → L2 Lead → DevOps → Java Dev → Solutions Architect',
+    role: 'L3 Engineer → L2 Lead → DevOps → Java Dev → Solution Architect',
     company: 'Cognizant · Telefonica O2, UK',
     colour: '#D4791A',
-    story: `Five roles in five years. Joined a chaotic vendor transition, spent 12-hour days documenting everything, automated away 50% of the ticket volume with a Java utility I built in my spare time. Was sent to London when my son was 40 days old to rescue a project in the red. Turned it around in weeks. Ended the chapter as a Solutions Architect migrating legacy apps to AWS with 3 days to spare before the deadline.`,
+    story: `Five roles in five years. Joined a chaotic vendor transition, spent 12-hour days documenting everything, automated away 50% of the ticket volume with a Java utility built in spare time. Was sent to London when my son was 40 days old to rescue a project in the red. Turned it around in weeks. Ended the chapter as a Solution Architect migrating legacy apps to AWS with 3 days to spare before the deadline.`,
     learning: 'Skills matter more than seniority. Document everything. Automate the boring stuff.',
   },
   {
@@ -28,10 +28,10 @@ const journey = [
   },
   {
     period: '2022 – Present',
-    role: 'Sr. System Architect → Solutions Architect',
+    role: 'Sr. System Architect → Solution Architect',
     company: 'DXC Technology · Velonetic, London',
     colour: '#0F4C5C',
-    story: `Joined the UK's largest insurance market transformation. Standardised hiring processes, founded the System Architecture Guild, delivered a billing capability from scratch, and started building an AI Agent for DXC's innovation challenge. The work is bigger than ever — and so is the learning.`,
+    story: `Joined a large-scale industry transformation programme. Standardised hiring processes, founded an Architecture Guild, delivered a billing capability from scratch, and started building an AI Agent as a personal innovation project. The work is bigger than ever — and so is the learning.`,
     learning: 'Growing a community of like-minded people is one of the most rewarding things you can do.',
   },
 ]

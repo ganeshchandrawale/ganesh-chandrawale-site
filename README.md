@@ -1,6 +1,6 @@
-# ganeshchandrawale.io
+# ganeshchandrawale.info
 
-Personal website and blog for Ganesh Chandrawale — Solutions Architect, problem solver, lifelong learner.
+Personal website and thought-leadership space for Ganesh Chandrawale — Solution Architect, problem solver, lifelong learner.
 
 ## Tech Stack
 
@@ -8,7 +8,6 @@ Personal website and blog for Ganesh Chandrawale — Solutions Architect, proble
 - **Styling:** Tailwind CSS
 - **Content:** Markdown files with gray-matter frontmatter
 - **Deployment:** GitHub Pages via GitHub Actions
-- **Managed via:** Amazon Kiro
 
 ## Project Structure
 
@@ -17,85 +16,119 @@ Personal website and blog for Ganesh Chandrawale — Solutions Architect, proble
 │   ├── blog/              # Blog posts (.md files)
 │   └── ai-insights/       # AI Insights posts (.md files)
 ├── src/
-│   ├── app/
-│   │   ├── page.tsx       # Homepage (Hero + About + Journey + Projects + AI Teaser + Contact)
-│   │   ├── blog/          # Blog listing + individual post pages
-│   │   └── ai-insights/   # AI Insights listing + individual post pages
+│   ├── app/               # Next.js pages (blog, ai-insights, projects)
 │   ├── components/        # Reusable UI components
-│   ├── lib/
-│   │   └── posts.ts       # Markdown reading utilities
-│   └── styles/
-│       └── globals.css    # Global styles + animations
-├── public/
-│   └── images/            # Static assets (add profile photo here)
-└── .github/
-    └── workflows/
-        └── deploy.yml     # Auto-deploy to GitHub Pages on push to main
+│   ├── lib/posts.ts       # Markdown reading utilities
+│   └── styles/globals.css # Global styles + animations
+├── public/                # Static assets
+└── .github/workflows/     # Auto-deploy to GitHub Pages on push to main
 ```
 
-## Getting Started
+## Local Development
 
 ```bash
 npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+Open [http://localhost:3000](http://localhost:3000).
 
-## Writing a Blog Post
+---
 
-1. Create a new `.md` file in `content/blog/`
-2. Add frontmatter at the top:
+## Writing a New Post
+
+Posts are plain Markdown files. No CMS, no build step — just create the file, commit, and push.
+
+### Blog post
+
+1. Create a file in `content/blog/your-post-slug.md`
+2. The filename becomes the URL: `/blog/your-post-slug`
 
 ```markdown
 ---
 title: "Your post title"
-date: "2026-03-04"
-excerpt: "A one or two sentence summary shown in the listing page."
+date: "2026-03-18"
+excerpt: "One or two sentences shown on the listing page and used as the article standfirst."
 readTime: "4 min read"
-linkedinPost: true   # set to true if cross-posted to LinkedIn
+linkedinPost: true
 category: blog
 ---
 
 Your content here...
 ```
 
-3. Commit and push to `main` — the site deploys automatically.
+### AI Insights post
 
-## Writing an AI Insights Post
+Same as above, but save in `content/ai-insights/your-post-slug.md`.  
+The URL will be `/ai-insights/your-post-slug`.
 
-Same as above, but save the file in `content/ai-insights/` and set `category: ai-insights`.
+```markdown
+---
+title: "Your post title"
+date: "2026-03-18"
+excerpt: "One or two sentences shown on the listing page."
+readTime: "5 min read"
+linkedinPost: false
+category: ai-insights
+---
 
-## Adding a Profile Photo
+Your content here...
+```
 
-1. Add your photo to `public/images/profile.jpg`
-2. Update `src/components/Hero.tsx` to include an `<Image>` component
+### Frontmatter fields
 
-## Custom Domain Setup
+| Field | Required | Notes |
+|---|---|---|
+| `title` | yes | Shown as the H1 and in metadata |
+| `date` | yes | Format: `YYYY-MM-DD`. Posts are sorted newest first. |
+| `excerpt` | yes | Shown on listing page and as the article standfirst |
+| `readTime` | no | Defaults to `3 min read` if omitted |
+| `linkedinPost` | no | Set `true` to show "Also on LinkedIn" badge. Defaults to `false`. |
+| `category` | yes | Must be `blog` or `ai-insights` |
 
-1. Purchase your domain (e.g. `ganeshchandrawale.io`)
-2. Add a `CNAME` file to the `public/` folder containing just your domain name:
-   ```
-   ganeshchandrawale.io
-   ```
-3. In your domain registrar's DNS settings, add:
-   - `A` record → `185.199.108.153`
-   - `A` record → `185.199.109.153`
-   - `A` record → `185.199.110.153`
-   - `A` record → `185.199.111.153`
-4. In GitHub repo Settings → Pages → Custom domain, enter your domain.
+### Slug / filename rules
+
+- Use lowercase, hyphens only — no spaces or special characters
+- Keep it short and descriptive: `why-projects-fail.md`, `ai-in-regulated-industries.md`
+- The filename is the URL — once published, avoid renaming it
+
+### Markdown tips
+
+- Use `##` and `###` for headings (H1 is the title, already rendered)
+- Use `---` for a horizontal divider between sections
+- Use `**bold**` for emphasis sparingly
+- Standard Markdown links: `[link text](https://url.com)`
+
+---
+
+## Content Guardrails
+
+This site is written in a **personal capacity**. Before publishing any post, verify:
+
+- No employer names, client names, or internal programme names
+- No language implying ownership of internal IP ("frameworks I developed", "our programme")
+- Experience framed as: practitioner perspective, architectural analysis, or industry observation — not "hands-on delivery" or "production"
+- Tone: senior architect explaining how to think, not how to implement
+- No absolute claims ("the correct way", "must", "the only approach")
+- Author bio (in the author card) uses: *"Solution architect focused on large-scale systems, API platforms, and emerging AI integration patterns."*
+
+The footer disclaimer is already included on every page automatically.
+
+---
 
 ## Deployment
 
-Push to `main` — GitHub Actions handles the rest automatically. Build takes ~2 minutes.
+Push to `main` — GitHub Actions builds and deploys to GitHub Pages automatically. Takes ~2 minutes.
+
+---
 
 ## Colours & Typography
 
 | Element | Value |
 |---|---|
-| Primary (Teal) | `#0F4C5C` |
-| Accent (Amber) | `#D4791A` |
-| Background | `#FAF7F2` (parchment) |
+| Primary teal | `#0F4C5C` |
+| Accent amber | `#D4791A` |
+| Background | `#FAF7F2` |
 | Display font | Playfair Display |
 | Body font | Lora |
 | UI font | DM Sans |

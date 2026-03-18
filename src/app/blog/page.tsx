@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     'Writing by Ganesh Chandrawale on software architecture, digital transformation, technology leadership, business analysis and the future of work. Also published on LinkedIn.',
   alternates: { canonical: '/blog' },
   openGraph: {
-    title: 'Blog | Ganesh Chandrawale — Solutions Architect',
+    title: 'Blog | Ganesh Chandrawale — Solution Architect',
     description: 'Thoughts on architecture, leadership, tech decisions and lessons from 15+ years in enterprise IT.',
     url: `${BASE_URL}/blog`,
     type: 'website',

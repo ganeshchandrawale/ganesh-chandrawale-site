@@ -2,7 +2,7 @@ import { ImageResponse } from 'next/og'
 
 export const runtime = 'edge'
 export const dynamic = 'force-static'
-export const alt = 'Ganesh Chandrawale — Solutions Architect'
+export const alt = 'Ganesh Chandrawale — Solution Architect'
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
 
@@ -26,7 +26,7 @@ export default async function Image() {
         <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
           <div style={{ width: '40px', height: '3px', background: '#D4791A' }} />
           <span style={{ fontFamily: 'sans-serif', fontSize: '14px', color: '#D4791A', letterSpacing: '0.15em', textTransform: 'uppercase' }}>
-            Solutions Architect · London, UK
+            Solution Architect · London, UK
           </span>
         </div>
 
@@ -51,7 +51,7 @@ export default async function Image() {
             { num: '15+', label: 'Years in tech' },
             { num: 'AWS', label: 'Cloud Architecture' },
             { num: 'API', label: 'Design & Governance' },
-            { num: 'DXC', label: 'Technology' },
+            { num: 'AI', label: 'Integration Patterns' },
           ].map((s) => (
             <div key={s.label} style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
               <span style={{ fontSize: '28px', fontWeight: 700, color: '#0F4C5C' }}>{s.num}</span>

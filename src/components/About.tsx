@@ -53,10 +53,9 @@ export default function About() {
                 midnight to designing cloud architectures for some of the UK's largest programmes.
               </p>
               <p>
-                Today I work as a Solutions Architect on the London Market Transformation
-                Programme at DXC Technology, designing enterprise-scale systems on AWS. I also
-                write, mentor, lead a System Architecture Guild, and obsess over the role AI will
-                play in the future of how we all work.
+                Today I work as a Solution Architect designing enterprise-scale systems on AWS.
+                I also write, mentor, lead an Architecture Guild, and think deeply about the role
+                AI will play in the future of how we all work.
               </p>
             </div>
           </div>
@@ -92,8 +91,8 @@ export default function About() {
                 </div>
                 <div className="space-y-3">
                   {[
-                    { role: 'Solutions Architect', place: 'DXC Technology / Velonetic, London' },
-                    { role: 'Building an AI Agent', place: 'DXC Innovation Challenge' },
+                    { role: 'Solution Architect', place: 'Large-scale enterprise programmes, London' },
+                    { role: 'Building an AI Agent', place: 'Personal innovation project' },
                   ].map((item) => (
                     <div key={item.role}>
                       <div className="font-sans text-sm font-medium text-white">{item.role}</div>
@@ -111,15 +110,15 @@ export default function About() {
                 </div>
                 <div className="flex flex-wrap gap-2">
                   {[
-                    'Insurance Domain Architecture',
-                    'London Market Insurance',
-                    'Insurance Settlements',
-                    'Insurance Billing',
-                    'Sanctions Enablement',
+                    'Domain Architecture',
+                    'Regulated Industry Patterns',
+                    'Financial Settlements',
+                    'Billing Capability Design',
                     'Architecture Governance',
-                    'Regulatory & Financial Controls',
+                    'Financial Controls',
                     'Stakeholder Management',
                     'Solution Architecture',
+                    'API Design & Governance',
                   ].map((skill) => (
                     <span
                       key={skill}

@@ -34,7 +34,7 @@ export async function generateMetadata({
       url: `${BASE_URL}/ai-insights/${post.slug}`,
       authors: ['Ganesh Chandrawale'],
       publishedTime: post.date,
-      tags: ['AI', 'Future of Work', 'Solutions Architect', 'Digital Transformation', 'Technology Leadership'],
+      tags: ['AI', 'Future of Work', 'Solution Architect', 'Digital Transformation', 'Technology Leadership'],
       images: [{ url: '/og-image.png', width: 1200, height: 630, alt: post.title }],
     },
     twitter: {
@@ -68,13 +68,13 @@ export default async function AIInsightPost({ params }: { params: { slug: string
       '@type': 'Person',
       name: 'Ganesh Chandrawale',
       url: BASE_URL,
-      jobTitle: 'Solutions Architect',
+      jobTitle: 'Solution Architect',
       sameAs: ['https://www.linkedin.com/in/ganesh-chandrawale-7b734433/'],
     },
     publisher: { '@type': 'Person', name: 'Ganesh Chandrawale', url: BASE_URL },
     url: `${BASE_URL}/ai-insights/${post.slug}`,
     mainEntityOfPage: { '@type': 'WebPage', '@id': `${BASE_URL}/ai-insights/${post.slug}` },
-    keywords: 'Ganesh Chandrawale, AI, Future of Work, Solutions Architect, Digital Transformation, Technology Leadership',
+    keywords: 'Ganesh Chandrawale, AI, Future of Work, Solution Architect, Digital Transformation, Technology Leadership',
     articleSection: 'AI & Future of Work',
   }
 
@@ -137,7 +137,6 @@ export default async function AIInsightPost({ params }: { params: { slug: string
           {/* Byline — unchanged */}
           <p className="font-sans text-sm text-ink-500 mb-8">
             By <span className="font-medium text-ink-700">Ganesh Chandrawale</span>
-            {' '}— Solutions Architect, London
           </p>
 
           {/* Divider — unchanged */}
@@ -173,10 +172,9 @@ export default async function AIInsightPost({ params }: { params: { slug: string
             </div>
             <div>
               <div className="font-sans text-sm font-semibold text-[#0F4C5C]">Ganesh Chandrawale</div>
-              <div className="font-sans text-xs text-ink-400 mt-0.5 mb-2">Solutions Architect · DXC Technology · London, UK</div>
+              <div className="font-sans text-xs text-ink-400 mt-0.5 mb-2">Solution architect focused on large-scale systems, API platforms, and emerging AI integration patterns.</div>
               <p className="font-body text-xs text-ink-600 leading-relaxed">
-                15+ years delivering digital transformations across Insurance, Telecoms and Rail.
-                Writing about AI, architecture and the future of work.
+                Writing about AI, architecture and the future of work — in a personal capacity.
               </p>
             </div>
           </div>

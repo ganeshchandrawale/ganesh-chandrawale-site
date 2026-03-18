@@ -6,32 +6,31 @@ const BASE_URL = 'https://ganeshchandrawale.info'
 export const metadata: Metadata = {
   // ── Core ──────────────────────────────────────────────────────────────────
   title: {
-    default: 'Ganesh Chandrawale — Solutions Architect | Digital Transformation',
+    default: 'Ganesh Chandrawale — Solution Architect | Digital Transformation',
     template: '%s | Ganesh Chandrawale',
   },
   description:
-    'Ganesh Chandrawale is a Solutions Architect with 15+ years of experience in digital transformation, AWS cloud architecture, microservices, REST API design and IT strategy.',
+    'Ganesh Chandrawale is a Solution Architect with 15+ years of experience in digital transformation, AWS cloud architecture, microservices, REST API design and IT strategy.',
 
   // ── Keywords (still worth including for some search engines) ─────────────
   keywords: [
     'Ganesh Chandrawale',
-    'Ganesh Chandrawale Solutions Architect',
+    'Ganesh Chandrawale Solution Architect',
     'Chandrawale',
-    'Solutions Architect London',
-    'Solutions Architect UK',
+    'Solution Architect London',
+    'Solution Architect UK',
     'Business Analyst UK',
     'IT Business Analyst',
     'Digital Transformation Architect',
     'Digital Transformation Consultant UK',
-    'AWS Solutions Architect',
+    'AWS Solution Architect',
     'Cloud Migration Architect',
     'Microservices Architecture',
     'REST API Design',
     'API Governance',
     'System Architect',
     'Enterprise Architecture',
-    'London Market Transformation',
-    'DXC Technology Architect',
+    'London Market Insurance',
     'IT Strategy Consultant',
     'Tech Leadership',
     'AI Enthusiast',
@@ -57,15 +56,15 @@ export const metadata: Metadata = {
     locale: 'en_GB',
     url: BASE_URL,
     siteName: 'Ganesh Chandrawale',
-    title: 'Ganesh Chandrawale — Solutions Architect | Digital Transformation',
+    title: 'Ganesh Chandrawale — Solution Architect | Digital Transformation',
     description:
-      'Solutions Architect with 15+ years experience in AWS, microservices, API design and digital transformation. Based in London. Writing about technology, leadership and the future of work.',
+      'Solution Architect with 15+ years experience in AWS, microservices, API design and digital transformation. Based in London. Writing about technology, leadership and the future of work.',
     images: [
       {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Ganesh Chandrawale — Solutions Architect',
+        alt: 'Ganesh Chandrawale — Solution Architect',
       },
     ],
   },
@@ -73,9 +72,9 @@ export const metadata: Metadata = {
   // ── Twitter / X card ─────────────────────────────────────────────────────
   twitter: {
     card: 'summary_large_image',
-    title: 'Ganesh Chandrawale — Solutions Architect',
+    title: 'Ganesh Chandrawale — Solution Architect',
     description:
-      'Solutions Architect with 15+ years in digital transformation, AWS and API architecture.',
+      'Solution Architect with 15+ years in digital transformation, AWS and API architecture.',
     images: ['/og-image.png'],
   },
 
@@ -104,15 +103,15 @@ const personJsonLd = {
   '@type': 'Person',
   name: 'Ganesh Chandrawale',
   url: BASE_URL,
-  jobTitle: 'Solutions Architect',
+  jobTitle: 'Solution Architect',
   description:
-    'Solutions Architect with 15+ years of experience in digital transformation, AWS, microservices and API architecture.',
+    'Solution Architect with 15+ years of experience in digital transformation, AWS, microservices and API architecture.',
   worksFor: {
     '@type': 'Organization',
-    name: 'DXC Technology',
+    name: 'Independent',
   },
   knowsAbout: [
-    'Solutions Architecture',
+    'Solution Architecture',
     'Digital Transformation',
     'AWS Cloud',
     'Microservices',
