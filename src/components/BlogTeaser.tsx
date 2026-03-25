@@ -24,14 +24,7 @@ const featuredBlogPosts = [
     date: '14 Feb 2026',
     readTime: '5 min read',
     slug: 'hiring-smarter-not-harder'
-  },
-  {
-    title: 'Why some IT projects save £100k and others become money pits',
-    excerpt: 'After years in enterprise IT architecture, I\'ve realised the technical failure is rarely the problem. It\'s the decision logic at the start that fails. Here\'s what I\'ve learned.',
-    date: '2 Feb 2026',
-    readTime: '4 min read',
-    slug: 'why-projects-fail'
-  },
+  }
 ]
 
 export default function BlogTeaser() {
