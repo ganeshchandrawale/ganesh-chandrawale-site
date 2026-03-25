@@ -5,6 +5,13 @@ import { ArrowRight } from 'lucide-react'
 
 const featuredBlogPosts = [
   {
+    title: 'The Requirements Graveyard: Why So Many Projects Die Before a Line of Code Is Written',
+    excerpt: 'Most projects do not die in production; they die quietly in the requirements phase. By the time engineers open an IDE, the real damage is already done.',
+    date: '25 Mar 2026',
+    readTime: '4 min read',
+    slug: 'the-requirements-graveyard'
+  },
+  {
     title: 'Which Architect Am I, Exactly? The Job-Title Maze We\'ve Built',
     excerpt: 'When someone asks me what kind of architect I am, I still hesitate. My CV says Solution Architect, but my work cuts across integration, data, cloud and enterprise architecture.',
     date: '16 Mar 2026',
