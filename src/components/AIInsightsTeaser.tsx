@@ -5,6 +5,13 @@ import { ArrowRight } from 'lucide-react'
 
 const featuredInsights = [
   {
+    title: 'Architecture Assurance: Reconciling Intent Across the Distributed Web',
+    excerpt: 'In a modern enterprise, architecture is—and always will be—a **Distributed Web of Artifacts.**',
+    date: '31 Mar 2026',
+    readTime: '5 min read',
+    slug: 'architecture_assurance_article'
+  },
+  {
     title: 'From Page Views to Purpose: How AI Is Redefining Customer Experience in the IT Industry',
     excerpt: 'An exploration for strategy leaders, enterprise architects and customer experience professionals on the fundamental shift happening at the intersection of AI and customer experience.',
     date: '12 Mar 2026',
@@ -17,14 +24,7 @@ const featuredInsights = [
     date: '25 Feb 2026',
     readTime: '5 min read',
     slug: 'architectural-audit-amazon-kiro'
-  },
-  {
-    title: 'The AI industry right now is exactly like driving on an Indian road',
-    excerpt: 'Lanes are suggestions. The biggest vehicle has right of way. And at any moment, a cow might sit down in the middle of the highway. Sound familiar?',
-    date: '18 Feb 2026',
-    readTime: '3 min read',
-    slug: 'ai-industry-indian-road'
-  },
+  }
 ]
 
 export default function AIInsightsTeaser() {
