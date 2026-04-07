@@ -8,8 +8,6 @@ linkedinPost: true
 category: blog
 ---
 
-# The Requirements Graveyard: Why So Many Projects Die Before a Line of Code Is Written
-
 Most projects do not die in production; they die quietly in the requirements phase. 
 By the time engineers open an IDE, the real damage is already done.
 

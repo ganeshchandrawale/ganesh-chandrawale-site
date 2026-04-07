@@ -5,6 +5,13 @@ import { ArrowRight } from 'lucide-react'
 
 const featuredBlogPosts = [
   {
+    title: 'The Ferrari Analogy Is Costing You More Than You Think',
+    excerpt: 'How a seemingly sensible boardroom shortcut quietly undermines engineering quality, accumulates risk, and misreads the very philosophy it claims to follow.',
+    date: '07 Apr 2026',
+    readTime: '8 min read',
+    slug: 'ferrari-toyota-analogy'
+  },
+  {
     title: 'The Requirements Graveyard: Why So Many Projects Die Before a Line of Code Is Written',
     excerpt: 'Most projects do not die in production; they die quietly in the requirements phase. By the time engineers open an IDE, the real damage is already done.',
     date: '25 Mar 2026',
@@ -18,13 +25,6 @@ const featuredBlogPosts = [
     readTime: '8 min read',
     slug: 'which-architect-am-i-exactly'
   },
-  {
-    title: 'When hiring harder doesn\'t mean hiring better',
-    excerpt: 'I reviewed 100 CVs and ran 20 interviews to hire fewer than 5 people. Then we paused, changed the process, and hired 3 people from just 5 interviews. Here\'s what changed.',
-    date: '14 Feb 2026',
-    readTime: '5 min read',
-    slug: 'hiring-smarter-not-harder'
-  }
 ]
 
 export default function BlogTeaser() {
