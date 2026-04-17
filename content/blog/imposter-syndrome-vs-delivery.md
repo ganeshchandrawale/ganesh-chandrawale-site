@@ -33,7 +33,7 @@ In less than two weeks, we ticked a box on the project plan that had been stuck 
 
 The biggest thing I learned that year wasn't technical. It was this:
 
-> **Skills matter more than seniority.**
+> **Skills matter more than labels.**
 
 You don't need grey hair to lead a transformation. You need a learning mindset, the grit to document the chaos, and the courage to automate yourself out of a job.
 

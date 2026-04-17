@@ -22,14 +22,14 @@ const projects: Project[] = [
   {
     slug: 'billing-transformation',
     title: 'Billing Transformation',
-    subtitle: 'Turning intent into trusted, automated financial capability',
+    subtitle: 'Shaping requirements, designing a cross-domain solution, and rebuilding stakeholder confidence in a Finance-critical capability',
     tag: 'AWS · Microservices · Event-Driven',
     period: '2023 – Present',
     colour: '#0F4C5C',
     content: `
 Billing is a Finance-critical capability. If Billing is wrong, everything downstream becomes noisy: reconciliation, reporting, controls, and stakeholder confidence.
 
-This piece explores the architectural considerations behind designing a **greenfield Billing capability** — from clarifying business intent through to automated, control-aware financial processing.
+This piece explores the architectural considerations behind designing a **greenfield Billing capability** — from clarifying business intent and shaping requirements, through cross-domain solution design, to rebuilding stakeholder confidence at a point when the direction of the programme was genuinely in question.
 
 ---
 
@@ -44,6 +44,20 @@ Billing is often approached as a "system problem". In reality, it's a **domain p
 - How do exceptions resolve without breaking controls?
 
 If those questions are not answered first, automation simply accelerates confusion.
+
+---
+
+## Getting requirements to a standard worth building from
+
+One of the less visible but most consequential parts of this work was upstream of any solution design: working alongside business analysts to bring requirements to a genuine definition of ready.
+
+Requirements that arrive as one-liners — "we need a billing capability" — are not a starting point for design. They are a signal that the domain needs structure first. In practice, this meant:
+
+- Challenging and refining requirements until they were testable and unambiguous
+- Ensuring non-functional requirements were explicit, not assumed
+- Establishing a shared understanding of what "done" looked like before design began
+
+This step is easy to skip under delivery pressure. Skipping it tends to surface as rework, misalignment, and eroded confidence later.
 
 ---
 
@@ -68,20 +82,25 @@ A domain-first, outcome-driven approach tends to work well. The key consideratio
 
 ---
 
-## What "good" looks like
+## Designing across domains, not just within one
 
-A Billing capability is in a good place when:
+A billing capability does not exist in isolation. In a complex regulated environment, billing touches — and depends on — almost every other domain: policy, claims, finance, reporting, controls, and integration layers.
 
-- Finance can explain and defend outcomes
-- Processing is automated, not workaround-driven
-- Exceptions are visible, traceable, and owned
-- Controls are embedded into the workflow, not bolted on later
+One of the architectural challenges was designing a solution that was coherent end-to-end, not just internally consistent within the billing boundary. That meant:
+
+- Mapping dependencies and data flows across adjacent domains before finalising the billing design
+- Ensuring the solution was defensible to domain owners outside billing, not just within it
+- Making integration contracts explicit so downstream consumers could plan with confidence
+
+This kind of cross-domain thinking is where solution architecture earns its place — not in the detail of a single service, but in the coherence of the whole.
 
 ---
 
-## Stakeholder confidence in Billing change
+## Rebuilding stakeholder confidence
 
-Billing work is often where stakeholder confidence is fragile — especially where previous attempts have been inconsistent or overly technical.
+At an earlier stage of the programme, there was a genuine concern that the solution being designed was heading in the wrong direction. Stakeholders were uncertain whether the architecture reflected what the business actually needed.
+
+Addressing this required more than reassurance. It required a structured demonstration — showing, in terms Finance and business stakeholders could engage with, exactly what was being built, why each decision had been made, and how the design connected back to the original intent.
 
 Trust tends to build when:
 
@@ -91,6 +110,17 @@ Trust tends to build when:
 - The design remains explainable to non-technical stakeholders
 
 This is how a Billing capability becomes something Finance can rely on, not just something IT can point to.
+
+---
+
+## What "good" looks like
+
+A Billing capability is in a good place when:
+
+- Finance can explain and defend outcomes
+- Processing is automated, not workaround-driven
+- Exceptions are visible, traceable, and owned
+- Controls are embedded into the workflow, not bolted on later
     `,
   },
   {

@@ -70,7 +70,7 @@ export default function About() {
                 <ul className="space-y-3 font-body text-sm text-ink-700 leading-relaxed">
                   {[
                     'Real-world experience is the best teacher.',
-                    'Skills matter more than seniority.',
+                    'Skills matter more than labels.',
                     'Documentation isn\'t boring — it\'s how knowledge survives you.',
                     'The best architecture decisions are deeply human ones.',
                     'An IT change without a business change is an illusion.'

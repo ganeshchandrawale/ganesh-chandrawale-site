@@ -23,7 +23,7 @@ When I attend tech conferences, I ask one question about every tool: *"Remove th
 
 Never pick a tool because it's popular. Create a simple grid: your specific requirements on one axis, the candidate tools on the other. Weight them by importance.
 
-This turns subjective hype into objective data. I've used this approach at Network Rail, and the same matrix that was built for one evaluation became the standard template used across the entire programme.
+This turns subjective hype into objective data. I've used this approach in one of my projects, and the same matrix that was built for one evaluation became the standard template used across the entire programme.
 
 ## 3. Calculate the true 5-year ROI
 
@@ -40,7 +40,7 @@ I've seen companies focus entirely on the headline price and completely miss the
 
 This is the one people skip most often. Technology is the easy part — people are hard.
 
-If a new tool requires a complete overhaul of how your business operates, you must plan for culture change first. I learned this the hard way at Network Rail: we had a technically brilliant automation platform that sat largely unused because we couldn't get the business to change the way they worked.
+If a new tool requires a complete overhaul of how your business operates, you must plan for culture change first. I learned this the hard way: we had a technically brilliant automation platform that sat largely unused because we couldn't get the business to change the way they worked.
 
 **An IT change without a business change is just an expensive illusion.**
 

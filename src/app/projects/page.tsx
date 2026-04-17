@@ -25,7 +25,7 @@ const projects = [
     title: 'Billing Transformation',
     subtitle: 'Regulated Industry',
     period: '2023 – Present',
-    excerpt: 'Designing a greenfield billing capability from intent to automated financial processing — domain-first, control-aware.',
+    excerpt: 'From vague intent to trusted financial automation — shaping requirements, designing a cross-domain solution, and rebuilding stakeholder confidence along the way.',
     colour: '#0F4C5C',
   },
   {

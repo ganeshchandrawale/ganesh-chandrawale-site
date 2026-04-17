@@ -10,7 +10,7 @@ const projects = [
     title: 'Billing Transformation',
     subtitle: 'London Market Insurance',
     period: '2023 – Present',
-    excerpt: 'Designed and delivered a greenfield billing capability from one-line requirements to production-ready.',
+    excerpt: 'From vague intent to trusted financial automation — shaping requirements, designing a cross-domain solution, and rebuilding stakeholder confidence along the way.',
     colour: '#0F4C5C',
   },
   {

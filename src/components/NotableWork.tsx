@@ -7,8 +7,8 @@ const projects = [
     title: 'Greenfield Billing Capability',
     company: 'Regulated Industry, UK',
     period: '2023 – Present',
-    description: 'Designed a greenfield billing capability from minimal business intent through to automated financial processing. Worked with business analysts to bring requirements to standard, then designed a solution using AWS services, Java microservices, and event-driven patterns. An illustrative example of domain-first architecture in a regulated context.',
-    outcomes: ['Domain structured before solution designed', 'Straight-through processing with embedded controls', 'Requirements process standardised across the domain'],
+    description: 'Took a greenfield billing capability from one-line business intent to production-ready automated processing. Worked alongside business analysts to bring requirements to definition of ready, designed an end-to-end solution that touched every adjacent domain, and rebuilt stakeholder confidence at a point when the direction of the programme was in question.',
+    outcomes: ['Requirements brought to definition of ready before design began', 'Cross-domain solution design covering every connected capability', 'Stakeholder confidence restored through structured demonstration of intent'],
     colour: '#0F4C5C',
   },
   {
