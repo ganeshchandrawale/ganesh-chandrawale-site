@@ -151,3 +151,8 @@ The organisations that don't make this shift will find themselves measuring how 
 **The question is not whether AI will reshape digital customer experience. It already is. The question is whether your organisation is shaping that shift — or being shaped by it.**
 
 ---
+
+
+---
+
+*The views expressed in this article are those of the author and reflect independent practitioner analysis based on publicly available research and general professional experience. They do not represent the views of any employer, client, or organisation. All frameworks and patterns referenced are illustrative in nature.*

@@ -46,3 +46,8 @@ Use it for **governance and verification**. When you connect your reasoning engi
 If you're still auditing manually, you're leaving hours of high-level strategy on the table every single week.
 
 The biggest blocker I hear from people is either security concerns about giving AI access to live repos, or cultural resistance from teams not ready to trust AI outputs. Both are valid — but both are solvable. What's your biggest blocker?
+
+
+---
+
+*The views expressed in this article are those of the author and reflect independent practitioner analysis based on publicly available research and general professional experience. They do not represent the views of any employer, client, or organisation. All frameworks and patterns referenced are illustrative in nature.*

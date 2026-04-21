@@ -168,3 +168,8 @@ Instead of endlessly multiplying titles, we should:
 - Use tags and competencies to capture nuance rather than turning every nuance into a new job title.
 
 If we can draw clean architectures for complex systems, we should be able to draw a cleaner architecture for our own roles too.
+
+
+---
+
+*The views expressed in this article are those of the author and reflect independent practitioner analysis based on publicly available research and general professional experience. They do not represent the views of any employer, client, or organisation. All frameworks and patterns referenced are illustrative in nature.*

@@ -4,6 +4,13 @@ import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 
 const featuredBlogPosts = [
+    {
+    title: 'IT Uncertainty 2026: What It Feels Like on the Ground',
+    excerpt: 'Ive worked my way up from Java developer to Solutions Architect across multiple industries. Ive seen tech booms, busts, and everything in between. But 2026 feels different. Not just for executives making decisions, but for employees living the daily reality.',
+    date: '21 Apr 2026',
+    readTime: '3 min read',
+    slug: 'it-uncertainty-2026'
+  },
   {
     title: 'The Ferrari Analogy Is Costing You More Than You Think',
     excerpt: 'How a seemingly sensible boardroom shortcut quietly undermines engineering quality, accumulates risk, and misreads the very philosophy it claims to follow.',

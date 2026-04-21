@@ -186,3 +186,8 @@ They fail because we start building on assumptions, stale documents, and one‑l
 
 If you treat requirements as a living, governed asset — something to be tested, challenged, and continuously aligned — you dramatically reduce the number of initiatives that die before the first line of code is written.
 The work is not glamorous, but it is where the majority of project risk actually lives.
+
+
+---
+
+*The views expressed in this article are those of the author and reflect independent practitioner analysis based on publicly available research and general professional experience. They do not represent the views of any employer, client, or organisation. All frameworks and patterns referenced are illustrative in nature.*

@@ -46,3 +46,8 @@ None of this is complicated in theory. All of it is hard in practice.
 Over the coming weeks I'll be sharing the specific frameworks and red flags I've documented from past projects — the things I wish I'd known earlier, and the lessons that only come from doing the work.
 
 If you're a director or architect navigating these challenges, I'd genuinely love to hear which part of the process is giving you the most friction right now.
+
+
+---
+
+*The views expressed in this article are those of the author and reflect independent practitioner analysis based on publicly available research and general professional experience. They do not represent the views of any employer, client, or organisation. All frameworks and patterns referenced are illustrative in nature.*

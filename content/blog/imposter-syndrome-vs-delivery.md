@@ -38,3 +38,8 @@ The biggest thing I learned that year wasn't technical. It was this:
 You don't need grey hair to lead a transformation. You need a learning mindset, the grit to document the chaos, and the courage to automate yourself out of a job.
 
 To anyone feeling "too junior" for the challenge in front of them — if you can solve the problem, you belong in the room.
+
+
+---
+
+*The views expressed in this article are those of the author and reflect independent practitioner analysis based on publicly available research and general professional experience. They do not represent the views of any employer, client, or organisation. All frameworks and patterns referenced are illustrative in nature.*

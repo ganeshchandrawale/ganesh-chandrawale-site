@@ -32,3 +32,8 @@ The only way to survive is to develop **peripheral vision**: understand what's h
 The question I keep coming back to: are you actually driving toward something specific? Or are you just honking?
 
 Because there's a lot of honking happening right now, and not all of it is moving anywhere.
+
+
+---
+
+*The views expressed in this article are those of the author and reflect independent practitioner analysis based on publicly available research and general professional experience. They do not represent the views of any employer, client, or organisation. All frameworks and patterns referenced are illustrative in nature.*

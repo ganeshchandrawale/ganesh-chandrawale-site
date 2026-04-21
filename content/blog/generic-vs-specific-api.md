@@ -47,3 +47,8 @@ The questions I ask before deciding:
 If the answers point toward known, stable, internal consumers — go specific. If you're genuinely building a platform for an unknowable audience — build wider, but do it deliberately, not just because it feels safer.
 
 The worst outcome isn't building too narrow or too wide. It's building wide *by default*, without thinking it through.
+
+
+---
+
+*The views expressed in this article are those of the author and reflect independent practitioner analysis based on publicly available research and general professional experience. They do not represent the views of any employer, client, or organisation. All frameworks and patterns referenced are illustrative in nature.*

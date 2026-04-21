@@ -48,3 +48,8 @@ We went back to basics — four changes, each one simple on its own, but transfo
 Sometimes the answer isn't working harder — it's working smarter. Clear role definitions, consistent evaluation, and proper onboarding aren't just nice-to-haves. They're the foundation.
 
 The same principle applies to architecture decisions, by the way. If requirements aren't fit for purpose, don't accept them and hope for the best. Fix the problem at source, not where it surfaces.
+
+
+---
+
+*The views expressed in this article are those of the author and reflect independent practitioner analysis based on publicly available research and general professional experience. They do not represent the views of any employer, client, or organisation. All frameworks and patterns referenced are illustrative in nature.*
