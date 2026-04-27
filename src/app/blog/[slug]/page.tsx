@@ -138,6 +138,17 @@ export default async function BlogPost({ params }: { params: { slug: string } })
             By <span className="font-medium text-ink-700">Ganesh Chandrawale</span>
           </p>
 
+          {/* Hero image */}
+          {post.image && (
+            <div className="mb-10 rounded-sm overflow-hidden">
+              <img
+                src={post.image}
+                alt={post.title}
+                className="w-full object-cover max-h-[420px]"
+              />
+            </div>
+          )}
+
           {/* Divider — unchanged */}
           <div className="flex items-center gap-4 mb-10" aria-hidden="true">
             <div className="h-px flex-1 bg-ink-200" />

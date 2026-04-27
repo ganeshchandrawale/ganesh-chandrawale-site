@@ -5,6 +5,13 @@ import { ArrowRight } from 'lucide-react'
 
 const featuredInsights = [
   {
+    title: 'AI-Enabled API Governance: Turning a Bottleneck into a Competitive Advantage',
+    excerpt: 'API governance is one of those disciplines everyone agrees matters — but too many organisations still handle it too late.',
+    date: '27 Apr 2026',
+    readTime: '10 min read',
+    slug: 'ai_enabled_api_governance'
+  },
+  {
     title: 'Architecture Assurance: Reconciling Intent Across the Distributed Web',
     excerpt: 'In a modern enterprise, architecture is—and always will be—a **Distributed Web of Artifacts.**',
     date: '31 Mar 2026',

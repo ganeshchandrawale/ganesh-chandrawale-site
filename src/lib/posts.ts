@@ -10,6 +10,7 @@ export type PostMeta = {
   category: 'blog' | 'ai-insights'
   readTime?: string
   linkedinPost?: boolean
+  image?: string
 }
 
 export type Post = PostMeta & {
@@ -34,6 +35,7 @@ function getPostsFromDir(dir: string, category: 'blog' | 'ai-insights'): PostMet
       category,
       readTime: data.readTime || '3 min read',
       linkedinPost: data.linkedinPost || false,
+      image: data.image || null,
     }
   }).sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
 }
@@ -65,6 +67,7 @@ export function getPost(slug: string, category: 'blog' | 'ai-insights'): Post | 
     category,
     readTime: data.readTime || '3 min read',
     linkedinPost: data.linkedinPost || false,
+    image: data.image || null,
     content,
   }
 }
