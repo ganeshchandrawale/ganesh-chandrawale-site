@@ -4,7 +4,14 @@ import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 
 const featuredBlogPosts = [
-    {
+  {
+    title: 'Just-in-Time Leadership: Stepping Into Gaps You Didn\'t Train For',
+    excerpt: 'The best leaders aren\'t always the most qualified person in the room. They\'re the one willing to step in when the team needs it most — learning fast, staying focused, and keeping the shared goal in sight.',
+    date: '11 May 2026',
+    readTime: '2 min read',
+    slug: 'cricket-leadership'
+  },
+  {
     title: 'IT Uncertainty 2026: What It Feels Like on the Ground',
     excerpt: 'Ive worked my way up from Java developer to Solutions Architect across multiple industries. Ive seen tech booms, busts, and everything in between. But 2026 feels different. Not just for executives making decisions, but for employees living the daily reality.',
     date: '21 Apr 2026',
@@ -24,13 +31,6 @@ const featuredBlogPosts = [
     date: '25 Mar 2026',
     readTime: '4 min read',
     slug: 'the-requirements-graveyard'
-  },
-  {
-    title: 'Which Architect Am I, Exactly? The Job-Title Maze We\'ve Built',
-    excerpt: 'When someone asks me what kind of architect I am, I still hesitate. My CV says Solution Architect, but my work cuts across integration, data, cloud and enterprise architecture.',
-    date: '16 Mar 2026',
-    readTime: '8 min read',
-    slug: 'which-architect-am-i-exactly'
   },
 ]
 
