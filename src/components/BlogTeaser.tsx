@@ -5,6 +5,13 @@ import { ArrowRight } from 'lucide-react'
 
 const featuredBlogPosts = [
   {
+    title: 'Delivery Models Are Not Caricatures: Why the Waterfall vs Agile Debate Is Usually Wrong',
+    excerpt: 'Most organisations do not run pure Waterfall or pure Agile. The real question is not which methodology is best — it is which blend fits the risk, the team, and the outcome.',
+    date: '14 May 2026',
+    readTime: '5 min read',
+    slug: 'waterfall-agile-specdriven'
+  },
+  {
     title: 'Just-in-Time Leadership: Stepping Into Gaps You Didn\'t Train For',
     excerpt: 'The best leaders aren\'t always the most qualified person in the room. They\'re the one willing to step in when the team needs it most — learning fast, staying focused, and keeping the shared goal in sight.',
     date: '11 May 2026',
@@ -24,13 +31,6 @@ const featuredBlogPosts = [
     date: '07 Apr 2026',
     readTime: '8 min read',
     slug: 'ferrari-toyota-analogy'
-  },
-  {
-    title: 'The Requirements Graveyard: Why So Many Projects Die Before a Line of Code Is Written',
-    excerpt: 'Most projects do not die in production; they die quietly in the requirements phase. By the time engineers open an IDE, the real damage is already done.',
-    date: '25 Mar 2026',
-    readTime: '4 min read',
-    slug: 'the-requirements-graveyard'
   },
 ]
 
