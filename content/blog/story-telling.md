@@ -5,6 +5,7 @@ excerpt: "In technical roles, we often spend a lot of time focusing on the solut
 readTime: "7 min read"
 linkedinPost: true
 category: blog
+image: "/images/StoryTelling.png"
 ---
 
 It might sound simple. In reality, most people struggle to do it well.
