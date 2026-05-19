@@ -5,6 +5,13 @@ import { ArrowRight } from 'lucide-react'
 
 const featuredBlogPosts = [
   {
+    title: 'Why Technical Leaders Need to Think Like Storytellers',
+    excerpt: 'The hardest part of technical work is often not solving the problem — it is explaining it in a way that makes sense to everyone in the room. That is where storytelling becomes a real professional advantage.',
+    date: '20 May 2026',
+    readTime: '7 min read',
+    slug: 'story-telling'
+  },
+  {
     title: 'Delivery Models Are Not Caricatures: Why the Waterfall vs Agile Debate Is Usually Wrong',
     excerpt: 'Most organisations do not run pure Waterfall or pure Agile. The real question is not which methodology is best — it is which blend fits the risk, the team, and the outcome.',
     date: '14 May 2026',
@@ -24,13 +31,6 @@ const featuredBlogPosts = [
     date: '21 Apr 2026',
     readTime: '3 min read',
     slug: 'it-uncertainty-2026'
-  },
-  {
-    title: 'The Ferrari Analogy Is Costing You More Than You Think',
-    excerpt: 'How a seemingly sensible boardroom shortcut quietly undermines engineering quality, accumulates risk, and misreads the very philosophy it claims to follow.',
-    date: '07 Apr 2026',
-    readTime: '8 min read',
-    slug: 'ferrari-toyota-analogy'
   },
 ]
 
