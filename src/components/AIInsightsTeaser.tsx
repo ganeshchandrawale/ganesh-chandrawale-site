@@ -5,6 +5,13 @@ import { ArrowRight } from 'lucide-react'
 
 const featuredInsights = [
   {
+    title: 'AI killing jobs might not be the whole truth',
+    excerpt: 'AI killing jobs might not be the whole truth; it is rewriting job descriptions, reshaping team structures, and raising the bar for hybrid roles.',
+    date: '27 May 2026',
+    readTime: '6 min read',
+    slug: 'ai-job-evolution'
+  },
+  {
     title: 'AI-Enabled API Governance: Turning a Bottleneck into a Competitive Advantage',
     excerpt: 'API governance is one of those disciplines everyone agrees matters — but too many organisations still handle it too late.',
     date: '27 Apr 2026',
