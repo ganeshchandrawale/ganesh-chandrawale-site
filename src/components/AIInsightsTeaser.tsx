@@ -5,6 +5,13 @@ import { ArrowRight } from 'lucide-react'
 
 const featuredInsights = [
   {
+    title: 'Enterprise AI Architectures in 2026: Where the Market Agrees, Where It Splits, and What It Means for Work',
+    excerpt: 'The biggest tech platforms have now placed their AI strategy bets for 2026. A clear-eyed look at where the market aligns, where it diverges, and what it means for enterprise architects and the future of work.',
+    date: '4 Jun 2026',
+    readTime: '10 min read',
+    slug: 'enterprise-ai-architectures-2026'
+  },
+  {
     title: 'AI killing jobs might not be the whole truth',
     excerpt: 'AI killing jobs might not be the whole truth; it is rewriting job descriptions, reshaping team structures, and raising the bar for hybrid roles.',
     date: '27 May 2026',
@@ -20,7 +27,7 @@ const featuredInsights = [
   },
   {
     title: 'Architecture Assurance: Reconciling Intent Across the Distributed Web',
-    excerpt: 'In a modern enterprise, architecture is—and always will be—a **Distributed Web of Artifacts.**',
+    excerpt: 'In a modern enterprise, architecture is—and always will be—a Distributed Web of Artifacts.',
     date: '31 Mar 2026',
     readTime: '5 min read',
     slug: 'architecture_assurance_article'
@@ -31,13 +38,6 @@ const featuredInsights = [
     date: '12 Mar 2026',
     readTime: '12 min read',
     slug: 'page-views-to-purpose'
-  },
-  {
-    title: 'I completed an architectural audit in 60 minutes using Amazon Kiro',
-    excerpt: 'AI architectural audits used to take days. Here\'s the exact chain-prompting method I used with Amazon Kiro, GitHub and MCP to do one in under an hour.',
-    date: '25 Feb 2026',
-    readTime: '5 min read',
-    slug: 'architectural-audit-amazon-kiro'
   }
 ]
 
