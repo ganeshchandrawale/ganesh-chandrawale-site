@@ -5,6 +5,13 @@ import { ArrowRight } from 'lucide-react'
 
 const featuredInsights = [
   {
+    title: 'The Backstage Crew of Enterprise IT: Why Metadata Management Dictates the Success of Modern Architecture and AI',
+    excerpt: 'In enterprise IT, your data strategy, your microservices, and your shiny new generative AI platforms are the stars on stage. Metadata management is the backstage crew.',
+    date: '10 Jun 2026',
+    readTime: '6 min read',
+    slug: 'metadata-management'
+  },
+  {
     title: 'Enterprise AI Architectures in 2026: Where the Market Agrees, Where It Splits, and What It Means for Work',
     excerpt: 'The biggest tech platforms have now placed their AI strategy bets for 2026. A clear-eyed look at where the market aligns, where it diverges, and what it means for enterprise architects and the future of work.',
     date: '4 Jun 2026',
@@ -31,13 +38,6 @@ const featuredInsights = [
     date: '31 Mar 2026',
     readTime: '5 min read',
     slug: 'architecture_assurance_article'
-  },
-  {
-    title: 'From Page Views to Purpose: How AI Is Redefining Customer Experience in the IT Industry',
-    excerpt: 'An exploration for strategy leaders, enterprise architects and customer experience professionals on the fundamental shift happening at the intersection of AI and customer experience.',
-    date: '12 Mar 2026',
-    readTime: '12 min read',
-    slug: 'page-views-to-purpose'
   }
 ]
 
